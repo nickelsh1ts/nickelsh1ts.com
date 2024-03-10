@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./public/img/logo_full-white.png" alt="nickelsh1ts" style="margin: 20px 0;">
+<img src="./public/logo_full-white.png" alt="nickelsh1ts" style="margin: 20px 0;">
 </p>
 
 Description...
