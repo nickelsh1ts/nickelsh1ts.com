@@ -34,3 +34,25 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+config/logs/*.log*
+config/logs/*.json
+config/logs/*.log.gz
+config/logs/*.json.gz
+config/logs/*-audit.json
+
+# dist files
+dist
+
+# ESLint
+.eslintcache
+
+# TS Build Info
+tsconfig.tsbuildinfo
+
+# Config Cache Directory
+config/cache
+
+# Yarn
+.yarn/
