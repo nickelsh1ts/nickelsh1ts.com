@@ -37,6 +37,13 @@ TBA
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://nickelsh1ts.com"><img src="https://avatars.githubusercontent.com/u/76549245?v=4?s=100" width="100px;" alt="nickelsh1ts"/><br /><sub><b>nickelsh1ts</b></sub></a><br /><a href="https://github.com/nickelsh1ts/nickelsh1ts-dev/commits?author=nickelsh1ts" title="Code">💻</a> <a href="#design-nickelsh1ts" title="Design">🎨</a> <a href="#content-nickelsh1ts" title="Content">🖋</a> <a href="#ideas-nickelsh1ts" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/nickelsh1ts/nickelsh1ts-dev/commits?author=nickelsh1ts" title="Documentation">📖</a> <a href="#data-nickelsh1ts" title="Data">🔣</a> <a href="#infra-nickelsh1ts" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#projectManagement-nickelsh1ts" title="Project Management">📆</a> <a href="#question-nickelsh1ts" title="Answering Questions">💬</a> <a href="https://github.com/nickelsh1ts/nickelsh1ts-dev/commits?author=nickelsh1ts" title="Tests">⚠️</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
