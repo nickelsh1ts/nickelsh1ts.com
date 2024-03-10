@@ -13,7 +13,8 @@
     "format": "prettier --loglevel warn --write --cache .",
     "format:check": "prettier --check --cache .",
     "typecheck": "yarn typecheck:client",
-    "typecheck:client": "tsc --noEmit"
+    "typecheck:client": "tsc --noEmit",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -61,6 +62,8 @@
     "@typescript-eslint/parser": "7.1.1",
     "autoprefixer": "10.4.18",
     "commitizen": "4.3.0",
+    "cy-mobile-commands": "^0.3.0",
+    "cypress": "^13.6.6",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.57.0",
     "eslint-config-next": "14.1.3",
