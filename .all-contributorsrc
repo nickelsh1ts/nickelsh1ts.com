@@ -1,5 +1,7 @@
 {
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "commit": false,
   "contributors": [
@@ -17,7 +19,8 @@
         "data",
         "infra",
         "projectManagement",
-        "question"
+        "question",
+        "test"
       ]
     }
   ],
@@ -26,5 +29,7 @@
   "projectOwner": "nickelsh1ts",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs",
+  "commitConvention": "angular"
 }
