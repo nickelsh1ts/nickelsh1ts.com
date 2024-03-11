@@ -13,13 +13,7 @@
       "contributions": [
         "code",
         "design",
-        "content",
         "ideas",
-        "doc",
-        "data",
-        "infra",
-        "projectManagement",
-        "question",
         "test"
       ]
     }
