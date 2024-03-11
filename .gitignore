@@ -56,3 +56,8 @@ config/cache
 
 # Yarn
 .yarn/
+
+# Cypress
+cypress.env.json
+cypress/videos
+cypress/screenshots
