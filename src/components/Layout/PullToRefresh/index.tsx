@@ -103,7 +103,7 @@ const PullToRefresh = () => {
       <div
         className={`${
           refreshDiv.current?.classList.contains('loading') && 'animate-spin'
-        } relative -top-24 h-9 w-9 rounded-full border-4 border-gray-800 bg-gray-800 shadow-md shadow-black ring-1 ring-gray-700`}
+        } relative -top-24 h-9 w-9 rounded-full border-4 border-orange-600 bg-orange-600 shadow-md shadow-black ring-1 ring-gray-700`}
         style={{ animationDirection: 'reverse' }}
       >
         <FontAwesomeIcon
