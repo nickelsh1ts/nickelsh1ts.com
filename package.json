@@ -76,7 +76,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "extract-react-intl-messages": "4.1.1",
     "lint-staged": "15.2.2",
-    "postcss": "8.4.35",
+    "postcss": "8.4.36",
     "prettier": "3.2.5",
     "prettier-plugin-organize-imports": "3.2.4",
     "prettier-plugin-tailwindcss": "0.5.12",
