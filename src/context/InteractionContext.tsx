@@ -1,3 +1,5 @@
+'use client';
+
 import useInteraction from '@app/hooks/useInteraction';
 import React from 'react';
 

@@ -1,11 +1,14 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import defaultTheme from 'tailwindcss/defaultTheme';
 import type { Config } from 'tailwindcss';
 
-const config: Config = {
+export default {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'selector',
   theme: {
     extend: {
       backgroundImage: {
@@ -17,46 +20,18 @@ const config: Config = {
         'max-height': 'max-height',
         width: 'width',
       },
+      colors: {
+        fox: '#F58A07',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             color: theme('colors.purple.300'),
             a: {
-              color: theme('colors.purple.500'),
+              color: theme('colors.purple.300'),
               '&:hover': {
-                color: theme('colors.purple.400'),
+                color: theme('colors.purple.600'),
               },
-            },
-
-            h1: {
-              color: theme('colors.purple.300'),
-            },
-            h2: {
-              color: theme('colors.purple.300'),
-            },
-            h3: {
-              color: theme('colors.purple.300'),
-            },
-            h4: {
-              color: theme('colors.purple.300'),
-            },
-            h5: {
-              color: theme('colors.purple.300'),
-            },
-            h6: {
-              color: theme('colors.purple.300'),
-            },
-
-            strong: {
-              color: theme('colors.purple.400'),
-            },
-
-            code: {
-              color: theme('colors.purple.300'),
-            },
-
-            figcaption: {
-              color: theme('colors.purple.500'),
             },
           },
         },
@@ -67,6 +42,6 @@ const config: Config = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
   ],
-};
-export default config;
+} satisfies Config;

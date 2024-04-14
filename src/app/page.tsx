@@ -1,8 +1,12 @@
+import Feed from '@app/components/Feed';
+import type { Metadata, NextPage } from 'next';
 
-export default function Home() {
-  return (
-    <main style={{backgroundColor: 'white', height: '100vh'}}>
+export const metadata: Metadata = {
+  title: 'Feed – nickelsh1ts.com',
+};
 
-    </main>
-  );
-}
+const Index: NextPage = () => {
+  return <Feed />;
+};
+
+export default Index;
