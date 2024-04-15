@@ -10,7 +10,7 @@ Home page - Portfolio landing page, socials, etc.
 
 ## Getting Started
 
-Simply export and host dist dircectory.
+Simply export and host dist directory.
 
 ## Preview
 
