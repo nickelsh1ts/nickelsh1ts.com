@@ -46,7 +46,7 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html lang="en">
+    <html lang="en-CA" data-theme="fox">
       <InteractionProvider>
         <head>
           <PWAHeader applicationTitle={applicationTitle} />
@@ -54,7 +54,7 @@ export default function RootLayout({
         <ServiceWorkerSetup />
       </InteractionProvider>
       <body
-        className={`flex flex-col min-h-screen ${isScrolled ? 'activeScroll' : ''}`}
+        className={`flex flex-col min-h-dvh ${isScrolled ? 'activeScroll' : ''}`}
       >
         <Layout>{children}</Layout>
       </body>
