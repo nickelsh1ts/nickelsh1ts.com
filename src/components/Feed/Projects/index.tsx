@@ -68,9 +68,11 @@ export default function Projects({ activeTab }: { activeTab: string }) {
           <p className="mb-6">
             I currently operate a small{' '}
             <a
+              href="https://linuxhandbook.com/homelab/"
               style={{ cursor: 'help' }}
               title="What is a Homelab and Why Should You Have One?"
               className="italic"
+              target="blank"
             >
               homelab
             </a>{' '}
@@ -82,6 +84,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
               <a
                 href="https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/T110-SpecSheet.pdf"
                 className="leading-tight"
+                target="blank"
               >
                 Dell PowerEdge T110
               </a>
@@ -91,6 +94,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
               <a
                 href="https://www.lenovo.com/ch/en/c/desktops/thinkcentre/m-series-tiny/"
                 className="leading-tight"
+                target="blank"
               >
                 Lenovo ThinkCentre MSeries
               </a>
@@ -122,6 +126,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   <a
                     href="https://console.cloud.google.com"
                     className="leading-tight"
+                    target="blank"
                   >
                     Google Cloud
                   </a>
@@ -133,6 +138,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   <a
                     href="https://dash.cloudflare.com"
                     className="leading-tight"
+                    target="blank"
                   >
                     Cloudflare
                   </a>
@@ -144,6 +150,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   <a
                     href="https://console.aws.amazon.com/"
                     className="leading-tight"
+                    target="blank"
                   >
                     AWS
                   </a>
@@ -152,7 +159,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   </p>
                 </li>
                 <li className="mb-2">
-                  <a href="https://cloud.cypress.io/" className="leading-tight">
+                  <a href="https://cloud.cypress.io/" target="blank" className="leading-tight">
                     Cypress Cloud
                   </a>
                   <p className="text-sm text-neutral-400">
@@ -163,6 +170,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   <a
                     href="https://github.com/nickelsh1ts"
                     className="leading-tight"
+                    target="blank"
                   >
                     GitHub
                   </a>
@@ -171,7 +179,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   </p>
                 </li>
                 <li className="mb-2">
-                  <a href="https://app.brevo.com/" className="leading-tight">
+                  <a href="https://app.brevo.com/" target="blank" className="leading-tight">
                     Brevo
                   </a>
                   <p className="text-sm text-neutral-400">SMTP server</p>
