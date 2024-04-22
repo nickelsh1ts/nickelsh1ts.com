@@ -18,10 +18,10 @@ const Header = () => {
           <source src="mp4/bg-v1.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="w-content max-w-full mv-0 mx-auto grid gap-1 px-4">
+      <div className="w-content max-w-full mv-0 mx-auto grid gap-0 px-4">
         <div className="relative flex justify-end items-center min-h-half-avatar py-2 my-2">
           <picture className="">
-            <div className="absolute bg-contain bg-no-repeat top-0 transform bg-surface-4 -translate-y-1/2 left-0 rounded-full aspect-square w-36 h-36 border-4 border-white bg-[url('/headshot-200x200.png')] hover:bg-[url('/logo_glitch.svg')] hover:border-0 hover:bg-contain hover:bg-right hover:w-48 hover:h-44 hover:-left-5" />
+            <div className="absolute bg-contain bg-no-repeat top-0 transform -translate-y-1/2 left-0 rounded-full aspect-square w-36 h-36 border-4 border-white bg-[url('/headshot-200x200.png')] hover:bg-[url('/logo_glitch.svg')] hover:border-0 hover:bg-contain hover:bg-right hover:w-48 hover:h-44 hover:-left-5" />
           </picture>
           <a
             href=""
@@ -76,7 +76,7 @@ const Header = () => {
             </svg>
           </span>
         </h1>
-        <div className="leading-tight">
+        <div className="leading-tight mb-3">
           <p className="mb-2">@nickelsh1ts</p>
           <p className="mb-2">
             Jr. Software Enigneer. Creative Developer. Web Enthusiest. Tech
@@ -146,7 +146,7 @@ const Header = () => {
             <span className="whitespace-nowrap">Joined April 2024</span>
           </span>
         </span>
-        <form className="my-6 grid gap-y-2 justify-center text-center">
+        {/* <form className="my-6 grid gap-y-2 justify-center text-center">
           <p>Looking to try out NickflixTV? Request an invite now!</p>
           <div className="flex">
             <input
@@ -163,7 +163,7 @@ const Header = () => {
           <p className="text-neutral-400 text-center">
             No spam. Unsubscribe any time.
           </p>
-        </form>
+        </form> */}
       </div>
     </header>
   );

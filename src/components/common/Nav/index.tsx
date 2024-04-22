@@ -1,5 +1,5 @@
 'use client';
-import ThemePicker from '@app/components/common/ThemePicker';
+// import ThemePicker from '@app/components/common/ThemePicker';
 import { useEffect, useState } from 'react';
 
 const Nav = () => {
@@ -39,7 +39,7 @@ const Nav = () => {
           <img className="" src="/apple-touch-icon.png" alt="nickelsh1ts" />
           <span className="sr-only">nickelsh1ts</span>
         </a>
-        <ThemePicker />
+        {/* <ThemePicker /> */}
       </div>
     </nav>
   );

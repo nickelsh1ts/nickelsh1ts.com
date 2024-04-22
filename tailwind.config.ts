@@ -22,6 +22,9 @@ export default {
       },
       colors: {
         fox: '#F58A07',
+        'surface-2': '#212529',
+        'surface-4': '#495057',
+        'brand-stroke': '#F58A07',
       },
       typography: (theme) => ({
         DEFAULT: {

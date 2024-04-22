@@ -11,5 +11,6 @@
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "files.associations": {
     "globals.css": "tailwindcss"
-  }
+  },
+  "cSpell.words": ["Homelab", "NICKFLIXTV", "Streamarr"]
 }
