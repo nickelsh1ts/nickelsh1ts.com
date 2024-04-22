@@ -1,6 +1,5 @@
-'use client';
+import PathName from '@app/components/common/PathName';
 import type { Metadata } from 'next';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -8,11 +7,10 @@ export const metadata: Metadata = {
 };
 
 export default function NotFound() {
-  const location = usePathname();
   return (
     <main className="mt-auto text-center">
       <h1 className="text-9xl">404</h1>
-      <h2 className="text-3xl my-3">{location}</h2>
+      <h2 className="text-3xl my-3"><PathName/></h2>
       <p className="text-4xl mb-3">Not Found</p>
       <Link className="text-md" href="/">
         Return Home
