@@ -1,0 +1,13 @@
+FROM node:20.12.2 AS base
+
+# Install dependencies only when needed
+FROM base AS deps
+
+COPY . /app
+WORKDIR /app
+
+RUN corepack enable
+RUN yarn set version stable
+RUN yarn
+
+CMD yarn dev

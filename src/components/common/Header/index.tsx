@@ -80,7 +80,7 @@ const Header = () => {
           <p className="mb-2">@nickelsh1ts</p>
           <p className="mb-2">
             Jr. Software Enigneer. Creative Developer. Web Enthusiest. Tech
-            tinkerer. Pro Open Source.
+            tinkerer. Pro Open Source. ServiceNow dev. HomeLab builder.
           </p>
         </div>
         <span className="flex gap-x-4 items-center text-fluid--1 flex-wrap text-neutral-400">

@@ -142,7 +142,7 @@ export default function Feed({ pageTab }: PageTabProps) {
               <div className="items-center text-sm text-neutral-400 font-thin">
                 Pinned
               </div>
-              <a href="/feed/" className="w-10 h-10">
+              <a href="/feed" className="w-10 h-10">
                 <span className="sr-only">Nickelsh1ts&apos; feed</span>
                 <picture>
                   <img
