@@ -6,10 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - .:/app:rw,cached
-      - /app/node_modules
-      - /app/.next
+    image: nickelsh1ts:latest
     restart: always
     ports:
-      - 3024:3024
+      - 3000:3000
