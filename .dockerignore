@@ -11,11 +11,14 @@
 .github
 .gitignore
 .husky
+.next
 .prettierignore
+.yarn
 Dockerfile*
 docker-compose.yml
-docs
+node_modules
 LICENSE
 public/preview.jpg
 stylelint.config.js
 cypress
+next-env.d.ts

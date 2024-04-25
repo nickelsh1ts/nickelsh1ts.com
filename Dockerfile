@@ -3,15 +3,19 @@ FROM node:20-alpine AS base
 # Rebuild the source code only when needed
 FROM base AS builder
 
+RUN corepack enable
+
 RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
 COPY package.json yarn.lock* ./
 
-RUN corepack enable
+RUN echo 'nodeLinker: "node-modules"' > ./.yarnrc.yml
 RUN yarn set version stable
 RUN yarn --frozen-lockfile --network-timeout 1000000
+
+ENV NEXT_PRIVATE_STANDALONE true
 
 COPY src ./src
 COPY public ./public
