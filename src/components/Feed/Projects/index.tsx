@@ -159,7 +159,11 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   </p>
                 </li>
                 <li className="mb-2">
-                  <a href="https://cloud.cypress.io/" target="blank" className="leading-tight">
+                  <a
+                    href="https://cloud.cypress.io/"
+                    target="blank"
+                    className="leading-tight"
+                  >
                     Cypress Cloud
                   </a>
                   <p className="text-sm text-neutral-400">
@@ -179,7 +183,11 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   </p>
                 </li>
                 <li className="mb-2">
-                  <a href="https://app.brevo.com/" target="blank" className="leading-tight">
+                  <a
+                    href="https://app.brevo.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
                     Brevo
                   </a>
                   <p className="text-sm text-neutral-400">SMTP server</p>

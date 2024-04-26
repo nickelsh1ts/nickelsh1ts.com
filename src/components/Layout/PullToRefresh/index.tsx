@@ -106,9 +106,9 @@ const PullToRefresh = () => {
         style={{ animationDirection: 'reverse' }}
       >
         <ArrowPathIcon
-          className={`rounded-full ${
+          className={`rounded-full -scale-x-100 ${
             pullDownReloadThreshold && 'rotate-180'
-          } text-white-500 transition-all duration-300`}
+          } text-white-500 transition-all duration-500`}
         />
       </div>
     </div>

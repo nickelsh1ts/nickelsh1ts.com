@@ -13,12 +13,13 @@ const nextConfig = {
   env: {
     commitTag: process.env.COMMIT_TAG || 'local',
   },
-  webpack(config) {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
       issuer: /\.(js|ts)x?$/,
       use: ['@svgr/webpack'],
     });
+    config.resolve.fallback = { fs: false, path: false };
 
     return config;
   },
