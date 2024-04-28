@@ -68,8 +68,7 @@ export function getSortedPostsData() {
 
   // Sort posts by date and return
   return allPostsData.sort((a, b) => {
-
-    if (a.date < b.date && !a.pinned || a.date > b.date && b.pinned) {
+    if ((a.date < b.date && !a.pinned) || (a.date > b.date && b.pinned)) {
       return 1;
     } else {
       return -1;
@@ -131,6 +130,12 @@ export async function getPostData(id: string) {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string; tag: string; emoji: string; pinned: boolean; }),
+    ...(matterResult.data as {
+      date: string;
+      title: string;
+      tag: string;
+      emoji: string;
+      pinned: boolean;
+    }),
   };
 }

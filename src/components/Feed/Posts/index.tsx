@@ -21,7 +21,9 @@ export default async function Posts() {
           className="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2"
           key={id}
         >
-          <div className={`${pinned === true ? 'block' : 'hidden' } w-10 grid justify-end text-neutral-400`}>
+          <div
+            className={`${pinned === true ? 'block' : 'hidden'} w-10 grid justify-end text-neutral-400`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -36,11 +38,13 @@ export default async function Posts() {
               ></path>
             </svg>
           </div>
-          <div className={`${pinned === true ? 'block' : 'hidden' } items-center text-sm text-neutral-400 font-thin`}>
+          <div
+            className={`${pinned === true ? 'block' : 'hidden'} items-center text-sm text-neutral-400 font-thin`}
+          >
             Pinned
           </div>
           <Link href="/feed" className="w-10 h-10">
-            <span className="sr-only">Nickelsh1ts&apos; feed</span>
+            <span className="sr-only">nickelsh1ts&apos; feed</span>
             <picture>
               <img
                 src="/headshot-200x200.png"
@@ -59,7 +63,7 @@ export default async function Posts() {
                 href="/about"
                 className="hover:underline font-bold text-text-1"
               >
-                Nickelsh1ts ✈️
+                nickelsh1ts ✈️
               </a>
               <span>•</span>
               <time className="text-xs font-thin text-neutral-400">

@@ -18,19 +18,19 @@ export default function About({ activeTab }: { activeTab: string }) {
         </div>
         <h2 className="mb-2 font-bold text-3xl">Hey there! 🤝</h2>
         <p className="mb-6">
-          The name&apos;s Nicholas aka Nickelshits. I&apos;m a web enthusiest
-          and developer who loves to automate life one line of code at a time.
+          I&apos;m Nicholas aka nickelshits. I&apos;m a web enthusiast and
+          developer who loves to automate life one line of code at a time.
         </p>
         <p className="mb-6">
-          I am an adovate of Open Source and its methodology. I enjoy playing
+          I am an advocate of Open Source and its methodology. I enjoy playing
           around and building in this space.
         </p>
         <p className="mb-6">
           I&apos;m known for my creative applications and determination to make
-          everything easier and faster with automations and codes. It&apos;s
-          astonshing how much information can be found when you open a computer.
-          It&apos;s even more amazing how all this knowledge can help you do
-          anything you put your mind to.
+          everything easier and faster with automation&apos;s and codes.
+          It&apos;s astonishing how much information can be found when you open
+          a computer. It&apos;s even more amazing how all this knowledge can
+          help you do anything you put your mind to.
         </p>
         <figure className="grid place-items-center my-6">
           <picture>
@@ -45,7 +45,8 @@ export default function About({ activeTab }: { activeTab: string }) {
             />
           </picture>
           <figcaption className="text-zinc-400 text-sm font-thin">
-            Nick at the finish line of a 16km obstacle course - 2019
+            Nick at the finish line of a 16km obstacle course{' '}
+            <i>(&quot;Flightie Mudders&quot;)</i> - 2019
           </figcaption>
         </figure>
         <p className="mb-6">
@@ -63,10 +64,10 @@ export default function About({ activeTab }: { activeTab: string }) {
           something creative and effective.
         </p>
         <p className="mb-6">
-          Besides ServiceNow, I dabble in Node and React applications (such as
-          this site). I can work with CSS, Javascript and typescript. I pride
-          myself on being a quick learner able to jump in and work under
-          pressure.
+          Besides ServiceNow, I dabble in Node and React applications{' '}
+          <i className="text-fox/90">(like this!)</i>. I can work with CSS,
+          Javascript and typescript. I pride myself on being a quick learner
+          able to jump in and work under pressure.
         </p>
         <p className="mb-6">
           I&apos;m an open book. Feel free to reach out anytime!

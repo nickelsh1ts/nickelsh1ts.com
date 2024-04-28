@@ -24,7 +24,7 @@ const Header = () => {
             <div className="absolute bg-contain bg-no-repeat top-0 transform -translate-y-1/2 left-0 rounded-full aspect-square w-36 h-36 border-4 border-white bg-[url('/headshot-200x200.png')] hover:bg-[url('/logo_glitch.svg')] hover:border-0 hover:bg-contain hover:bg-right hover:w-48 hover:h-44 hover:-left-5" />
           </picture>
           <a
-            href=""
+            href="https://instagram.com/nickelsh1ts"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-brand-fill px-3 py-1"
@@ -77,10 +77,10 @@ const Header = () => {
           </span>
         </h1>
         <div className="leading-tight mb-3">
-          <p className="mb-2">@nickelsh1ts</p>
+          <p className="mb-2">You can code anything. 🧑🏼‍💻</p>
           <p className="mb-2">
-            Jr. Software Enigneer. Creative Developer. Web Enthusiest. Tech
-            tinkerer. Pro Open Source. ServiceNow dev. HomeLab builder.
+            Jr. Software Enigneer. ServiceNow developer. Creative Builder.
+            HomeLab Enthusiest. Tech Tinkerer. Pro Open Source.
           </p>
         </div>
         <span className="flex gap-x-4 items-center text-fluid--1 flex-wrap text-neutral-400">

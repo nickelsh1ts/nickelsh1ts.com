@@ -64,6 +64,55 @@ export default function Projects({ activeTab }: { activeTab: string }) {
           </ul>
         </section>
         <section className="mb-8">
+          <h2 className="font-bold text-xl">nickelsh1ts</h2>
+          <p className="mb-6">
+            I gave my &quot;brand&quot; and homelab a name. I work on, build and
+            run a whole lot of things.
+          </p>
+          <ul>
+            <li className="mb-2">
+              <a
+                href="https://cloud.nickelsh1ts.com"
+                target="blank"
+                className="leading-tight"
+              >
+                Self-hosted personal cloud
+              </a>
+              <p className="text-sm text-neutral-400">NEXTCLOUD</p>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://office.nickelsh1ts.com"
+                target="blank"
+                className="leading-tight"
+              >
+                Fully online office suit
+              </a>
+              <p className="text-sm text-neutral-400">ONLYOFFICE</p>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://plane.nickelsh1ts.com/"
+                target="blank"
+                className="leading-tight"
+              >
+                Project Management Suite
+              </a>
+              <p className="text-sm text-neutral-400">PLANE</p>
+            </li>
+            <li className="mb-2">
+              <a
+                href="https://uptime.nickelsh1ts.com/status/systems"
+                target="blank"
+                className="leading-tight"
+              >
+                Service Uptime Status
+              </a>
+              <p className="text-sm text-neutral-400">UPTIME KUMA</p>
+            </li>
+          </ul>
+        </section>
+        <section className="mb-8">
           <h2 className="font-bold mb-2 text-xl">HomeLab</h2>
           <p className="mb-6">
             I currently operate a small{' '}
@@ -121,7 +170,7 @@ export default function Projects({ activeTab }: { activeTab: string }) {
             </li>
             <li className="mb-2">
               <p className="leading-tight">Current Tech Stack</p>
-              <ul className="text-sm text-neutral-400 grid grid-cols-3 sm:grid-cols-5 gap-5 my-3">
+              <ul className="text-sm text-neutral-400 grid grid-cols-3 sm:grid-cols-5 gap-2 my-3">
                 <li className="mb-2">
                   <a
                     href="https://console.cloud.google.com"
@@ -192,25 +241,384 @@ export default function Projects({ activeTab }: { activeTab: string }) {
                   </a>
                   <p className="text-sm text-neutral-400">SMTP server</p>
                 </li>
-                <p>app.plex</p>
-                <p>Overseerr</p>
-                <p>Sonarr.tv</p>
-                <p>Radarr.video</p>
-                <p>Bazarr</p>
-                <p>prowlarr</p>
-                <p>Tdarr.io</p>
-                <p>Tautulli</p>
-                <p>Lidarr</p>
-                <p>Readarr</p>
-                <p>Authentik</p>
-                <p>netdata</p>
-                <p>dozzle</p>
-                <p>Traefik</p>
-                <p>pi-hole</p>
-                <p>portainer</p>
-                <p>calibre</p>
-                <p>theme-park.dev</p>
-                <p>HomeAssistant</p>
+                <li className="mb-2">
+                  <a
+                    href="https://app.plex.tv"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    app.plex
+                  </a>
+                  <p className="text-sm text-neutral-400">Streaming</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://overseerr.dev/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Overseerr
+                  </a>
+                  <p className="text-sm text-neutral-400">Request Management</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://sonarr.tv/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Sonarr.tv
+                  </a>
+                  <p className="text-sm text-neutral-400">TV PVR</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://radarr.video/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Radarr.video
+                  </a>
+                  <p className="text-sm text-neutral-400">Movie PVR</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.bazarr.media/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Bazarr.media
+                  </a>
+                  <p className="text-sm text-neutral-400">SRT Indexer</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://prowlarr.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Prowlarr
+                  </a>
+                  <p className="text-sm text-neutral-400">Indexer Manager</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://home.tdarr.io/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Tdarr.io
+                  </a>
+                  <p className="text-sm text-neutral-400">Transcoding</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://tautulli.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Tautulli
+                  </a>
+                  <p className="text-sm text-neutral-400">Statistics</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://lidarr.audio/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Lidarr.audio
+                  </a>
+                  <p className="text-sm text-neutral-400">Music Manager</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://readarr.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Readarr
+                  </a>
+                  <p className="text-sm text-neutral-400">eBook Manager</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://goauthentik.io/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    authentik.io
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    Authentication & SSO
+                  </p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.netdata.cloud/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    NETDATA
+                  </a>
+                  <p className="text-sm text-neutral-400">Monitoring</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://dozzle.dev/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Dozzle
+                  </a>
+                  <p className="text-sm text-neutral-400">Logging</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://traefik.io/traefik/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Traefik.io
+                  </a>
+                  <p className="text-sm text-neutral-400">App Proxy</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://pi-hole.net/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Pi-hole
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    Network-wide Ad Blocking
+                  </p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.portainer.io/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    portainer.io
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    Container Management
+                  </p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://calibre-ebook.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Calibre{' '}
+                  </a>
+                  <p className="text-sm text-neutral-400">eBook Server</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://theme-park.dev/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    theme.park
+                  </a>
+                  <p className="text-sm text-neutral-400">App Themes</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.home-assistant.io/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Home Assistant
+                  </a>
+                  <p className="text-sm text-neutral-400">Home Automation</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://nextcloud.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    NextCloud
+                  </a>
+                  <p className="text-sm text-neutral-400">Home Cloud</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.deluge-torrent.org/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Deluge
+                  </a>
+                  <p className="text-sm text-neutral-400">BitTorrent Client</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.firefly-iii.org/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    FireFlyiii
+                  </a>
+                  <p className="text-sm text-neutral-400">Finance Manager</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://flood.js.org/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Flood
+                  </a>
+                  <p className="text-sm text-neutral-400">BitTorrent UI</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.onlyoffice.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    OnlyOffice
+                  </a>
+                  <p className="text-sm text-neutral-400">Office Suite</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://plane.so/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Plane
+                  </a>
+                  <p className="text-sm text-neutral-400">Project Management</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://gotify.net/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Gotify
+                  </a>
+                  <p className="text-sm text-neutral-400">Notifications</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://uptime.kuma.pet/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Uptime Kuma
+                  </a>
+                  <p className="text-sm text-neutral-400">Service Status</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://github.com/dani-garcia/vaultwarden"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    VaultWarden
+                  </a>
+                  <p className="text-sm text-neutral-400">Vault Service</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://js.wiki/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    WikiJS
+                  </a>
+                  <p className="text-sm text-neutral-400">Wiki Server</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.activepieces.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    ActivePieces
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    Automation Platform
+                  </p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://github.com/dbeaver/cloudbeaver"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    CloudBeaver
+                  </a>
+                  <p className="text-sm text-neutral-400">Database Manager</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://duplicacy.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Duplicacy
+                  </a>
+                  <p className="text-sm text-neutral-400">Backups</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://jellyfin.org/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Jellyfin
+                  </a>
+                  <p className="text-sm text-neutral-400">Media System</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.proxmox.com/en/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Proxmox
+                  </a>
+                  <p className="text-sm text-neutral-400">Virtualization</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://github.com/meeb/tubesync"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    TubeSync
+                  </a>
+                  <p className="text-sm text-neutral-400">Youtube PVR</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.truenas.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    TrueNAS
+                  </a>
+                  <p className="text-sm text-neutral-400">Network Storage</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.nginx.com/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Nginx
+                  </a>
+                  <p className="text-sm text-neutral-400">Web Server</p>
+                </li>
               </ul>
             </li>
           </ul>

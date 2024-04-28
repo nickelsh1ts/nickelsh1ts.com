@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   const postData: PostData = await getPostData(params.id);
 
   return {
-    title: postData.title,
+    title: postData.title + ' - nickelsh1ts.com',
   };
 }
 
@@ -39,7 +39,7 @@ export default async function Post({ params }: Props) {
           key={params.id}
         >
           <Link href="/feed" className="w-10 h-10">
-            <span className="sr-only">Nickelsh1ts&apos; feed</span>
+            <span className="sr-only">nickelsh1ts&apos; feed</span>
             <picture>
               <img
                 src="/headshot-200x200.png"
@@ -58,7 +58,7 @@ export default async function Post({ params }: Props) {
                 href="/about"
                 className="hover:underline font-bold text-text-1"
               >
-                Nickelsh1ts ✈️
+                nickelsh1ts ✈️
               </a>
               <span>•</span>
               <time className="text-xs font-thin text-neutral-400">
