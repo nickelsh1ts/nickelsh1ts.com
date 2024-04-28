@@ -1,7 +1,7 @@
 'use client';
-import About from '@app/components/Feed/About';
-import Extras from '@app/components/Feed/Extras';
-import Projects from '@app/components/Feed/Projects';
+import About from '@app/components/About';
+import Extras from '@app/components/Extras';
+import Projects from '@app/components/Projects';
 import { useState } from 'react';
 
 const Tabs = ({ pageTab, children }) => {

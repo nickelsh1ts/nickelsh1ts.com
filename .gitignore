@@ -61,3 +61,5 @@ config/cache
 cypress.env.json
 cypress/videos
 cypress/screenshots
+
+src/posts/*.md
