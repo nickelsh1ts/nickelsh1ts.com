@@ -27,7 +27,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/nicholaswege/"
             rel="noopener noreferrer"
             target="_blank"
-            title="Come follow me on Mastodon!"
+            title="Take a look at my Linkin profile"
           >
             <svg
               fill="currentColor"
@@ -45,7 +45,7 @@ export default function Footer() {
             href="https://discord.gg/Zmp4nNzYQH"
             rel="noopener noreferrer"
             target="_blank"
-            title="Come follow me on Twitter!"
+            title="Take a look at my NickflixTV server"
           >
             <svg
               fill="currentColor"
@@ -80,7 +80,7 @@ export default function Footer() {
             href="https://www.youtube.com/@nickelsh1ts"
             rel="noopener noreferrer"
             target="_blank"
-            title="Check out my CodePen"
+            title="Watch my content on Youtube"
           >
             <svg
               fill="currentColor"
@@ -106,7 +106,7 @@ export default function Footer() {
             href="https://steamcommunity.com/id/nickelsh1ts/"
             rel="noopener noreferrer"
             target="_blank"
-            title="Check out my latest live stream"
+            title="Check out my Steam profile!"
           >
             <svg
               fill="currentColor"
@@ -123,7 +123,7 @@ export default function Footer() {
             href="https://account.xbox.com/en-ca/profile?gamertag=dontjdgmemnky"
             rel="noopener noreferrer"
             target="_blank"
-            title="Check out my latest live stream"
+            title="Add my gamertag on Xbox"
           >
             <svg
               fill="currentColor"
@@ -140,7 +140,7 @@ export default function Footer() {
             href="https://psnprofiles.com/DntJdgMeMnky"
             rel="noopener noreferrer"
             target="_blank"
-            title="Grab my RSS Feed!"
+            title="Check me out on Playstation"
           >
             <svg
               fill="currentColor"
