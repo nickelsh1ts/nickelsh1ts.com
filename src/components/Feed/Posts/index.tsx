@@ -1,12 +1,14 @@
 import Date from '@app/components/common/Date';
-import { getSortedPostsData } from '@app/lib/posts';
+import { getPostData, getSortedPostsData } from '@app/lib/posts';
 import Link from 'next/link';
 
 type AllPostsData = {
   date: string;
   title: string;
   id: string;
-  contentHtml: string;
+  tag: string;
+  emoji: string;
+  pinned: boolean;
 }[];
 
 export default async function Posts() {
@@ -14,12 +16,12 @@ export default async function Posts() {
 
   return (
     <div className="grid gap-4">
-      {allPostsData.map(({ id, date, title, contentHtml }) => (
+      {allPostsData.map(async ({ id, date, title, tag, emoji, pinned }) => (
         <article
           className="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2"
           key={id}
         >
-          <div className="w-10 grid justify-end text-neutral-400">
+          <div className={`${pinned === true ? 'block' : 'hidden' } w-10 grid justify-end text-neutral-400`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -34,10 +36,10 @@ export default async function Posts() {
               ></path>
             </svg>
           </div>
-          <div className="items-center text-sm text-neutral-400 font-thin">
+          <div className={`${pinned === true ? 'block' : 'hidden' } items-center text-sm text-neutral-400 font-thin`}>
             Pinned
           </div>
-          <Link href={`/posts/${id}`} className="w-10 h-10">
+          <Link href="/feed" className="w-10 h-10">
             <span className="sr-only">Nickelsh1ts&apos; feed</span>
             <picture>
               <img
@@ -67,24 +69,19 @@ export default async function Posts() {
             <div>
               <div className="py-1 px-3 inline-flex items-center gap-1 bg-surface-4 inline rounded-full">
                 <span role="img" aria-hidden="true">
-                  👽
+                  {emoji}
                 </span>
-                <span className="text-sm font-bold">Feelin&apos; alive</span>
+                <span className="text-sm font-bold">{tag}</span>
               </div>
             </div>
             <h2 className="mb-1 font-bold text-2xl">{title}</h2>
-            <p className="mb-4">{contentHtml}</p>
-            <picture>
-              <img
-                className="rounded-lg"
-                src="/nick-with-his-dog.jpg"
-                alt="Nick with his dog"
-                width="750"
-                height="500"
-                decoding="async"
-                loading="lazy"
-              />
-            </picture>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: await getPostData(id).then(
+                  (result) => result.contentHtml
+                ),
+              }}
+            ></div>
             <div className="card__actions flex justify-end items-center">
               <a
                 title="Permalink"

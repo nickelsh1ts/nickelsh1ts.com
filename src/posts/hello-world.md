@@ -1,5 +1,12 @@
 ---
 title: 'Hello World!'
-date: '2024-04-21'
-contentHtml: "This is my site where I try and post about what I'm up to and how to reach out to me."
+date: '2024-04-27'
+tag: "Feelin' alive"
+emoji: '👽'
+pinned: true
 ---
+
+<p className="mb-4">This is my site where I try and post about what I'm up to and how to reach out to me.</p>
+<picture>
+<img className="rounded-lg" src="/nick-with-his-dog.jpg" alt="Nick with his dog" width="750" height="500" decoding="async" loading="lazy" />
+</picture>

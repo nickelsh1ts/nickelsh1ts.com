@@ -10,6 +10,9 @@ import matter from 'gray-matter';
 // Import 'remark', library for rendering markdown
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkRehype from 'remark-rehype';
+import rehypeRaw from 'rehype-raw';
+import rehypeStringify from 'rehype-stringify';
 
 // --------------------------------
 // GET THE PATH OF THE POSTS FOLDER
@@ -56,14 +59,17 @@ export function getSortedPostsData() {
       ...(matterResult.data as {
         date: string;
         title: string;
-        contentHtml: string;
+        tag: string;
+        emoji: string;
+        pinned: boolean;
       }),
     };
   });
 
   // Sort posts by date and return
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
+
+    if (a.date < b.date && !a.pinned || a.date > b.date && b.pinned) {
       return 1;
     } else {
       return -1;
@@ -115,6 +121,9 @@ export async function getPostData(id: string) {
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
+    .use(rehypeStringify)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
@@ -122,6 +131,6 @@ export async function getPostData(id: string) {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string }),
+    ...(matterResult.data as { date: string; title: string; tag: string; emoji: string; pinned: boolean; }),
   };
 }

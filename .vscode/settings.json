@@ -12,5 +12,11 @@
   "files.associations": {
     "globals.css": "tailwindcss"
   },
-  "cSpell.words": ["Homelab", "NICKFLIXTV", "Streamarr"]
+  "cSpell.words": [
+    "Homelab",
+    "nextjs",
+    "NICKFLIXTV",
+    "rehype",
+    "Streamarr"
+  ]
 }
