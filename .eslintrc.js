@@ -44,7 +44,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.tsx'],
+      files: ['src/**/*.tsx'],
       rules: {
         'react/prop-types': 'off',
       },

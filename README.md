@@ -1,16 +1,16 @@
 <p align="center">
-<img src="./public/logo_full-white.png" alt="nickelsh1ts" style="margin: 20px 0;">
+<img src="./public/logo_full.png" alt="nickelsh1ts" style="margin: 20px 0;">
 </p>
 
-Description...
+Self-hosted portfolio and project site custom built in nextjs.
 
 ## Current Features
 
-TBA
+Home page - Portfolio landing page, socials, etc.
 
 ## Getting Started
 
-TBA
+Simply export and host dist directory.
 
 ## Preview
 

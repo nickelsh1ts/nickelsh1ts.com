@@ -17,6 +17,6 @@ context('Window', () => {
 
   it('cy.title() - get the title', () => {
     // https://on.cypress.io/title
-    cy.title().should('include', 'Nickelsh1ts');
+    cy.title().should('include', 'nickelsh1ts');
   });
 });

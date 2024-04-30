@@ -1,46 +1,25 @@
+'use client';
 import PullToRefresh from '@app/components/Layout/PullToRefresh';
-import { useEffect, useState } from 'react';
+import Footer from '@app/components/common/Footer';
+import Nav from '@app/components/common/Nav';
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
 const Layout = ({ children }: LayoutProps) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const updateScrolled = () => {
-      if (window.pageYOffset > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', updateScrolled, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', updateScrolled);
-    };
-  }, []);
-
   return (
-    <div className="">
+    <>
+      <Nav />
+      <img
+        src="/android-chrome-512x512.png"
+        alt="brand"
+        className="watermark-fox"
+      />
       <PullToRefresh />
-      <div
-        className={`searchbar fixed left-0 right-0 top-0 z-10 flex flex-shrink-0 bg-opacity-80 transition duration-300 ${
-          isScrolled ? 'bg-purple-700' : 'bg-transparent'
-        } lg:left-64`}
-        style={{
-          backdropFilter: isScrolled ? 'blur(5px)' : undefined,
-          WebkitBackdropFilter: isScrolled ? 'blur(5px)' : undefined,
-        }}
-      ></div>
-
-      <main className="" tabIndex={0}>
-        {children}
-      </main>
-    </div>
+      {children}
+      <Footer />
+    </>
   );
 };
 

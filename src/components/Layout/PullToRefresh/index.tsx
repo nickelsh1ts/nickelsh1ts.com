@@ -1,7 +1,6 @@
+import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRotateLeft } from '@fortawesome/free-solid-svg-icons';
 
 const PullToRefresh = () => {
   const router = useRouter();
@@ -103,14 +102,13 @@ const PullToRefresh = () => {
       <div
         className={`${
           refreshDiv.current?.classList.contains('loading') && 'animate-spin'
-        } relative -top-24 h-9 w-9 rounded-full border-4 border-gray-800 bg-gray-800 shadow-md shadow-black ring-1 ring-gray-700`}
+        } relative -top-24 h-9 w-9 rounded-full border-4 border-fox bg-fox shadow-md shadow-black ring-1 ring-zinc-700`}
         style={{ animationDirection: 'reverse' }}
       >
-        <FontAwesomeIcon
-          icon={faArrowRotateLeft}
-          className={`rounded-full h-7 w-7 ${
+        <ArrowPathIcon
+          className={`rounded-full -scale-x-100 ${
             pullDownReloadThreshold && 'rotate-180'
-          } text-white-500 transition-all duration-300`}
+          } text-white-500 transition-all duration-500`}
         />
       </div>
     </div>
