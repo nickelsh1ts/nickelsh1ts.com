@@ -24,23 +24,23 @@ const ExtraPosts: ExtraPostsProps[] = [
     image: '/headshot-200x200.png',
     slug: <p>Feel free to download my contact and take it with you.</p>,
     content: (
-      <picture>
+      <><picture>
         <img
           className="rounded-lg mb-1"
           src="/business-card-back.png"
-          alt="Card back"
+          alt="Business Card"
+          title='Tap or hover to flip'
           width="750"
           height="500"
           decoding="async"
           loading="lazy"
-          onMouseOver={(e) =>
-            (e.currentTarget.src = '/business-card-front.png')
-          }
+          onMouseOver={(e) => (e.currentTarget.src = '/business-card-front.png')}
           onFocus={(e) => (e.currentTarget.src = '/business-card-front.png')}
           onMouseOut={(e) => (e.currentTarget.src = '/business-card-back.png')}
-          onBlur={(e) => (e.currentTarget.src = '/business-card-back.png')}
-        />
-      </picture>
+          onBlur={(e) => (e.currentTarget.src = '/business-card-back.png')} />
+      </picture><p className="text-zinc-400 text-sm text-center font-thin">
+          Tap or hover to flip the card!
+        </p></>
     ),
     attachment: true,
     downloadFile: 'nicholas.wege.vcf',
