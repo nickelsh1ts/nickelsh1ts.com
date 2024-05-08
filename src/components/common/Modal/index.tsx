@@ -11,6 +11,8 @@ interface Props {
   show: boolean;
   onClose?: () => void;
   slug: React.ReactNode;
+  downloadHref?: string;
+  downloadFile?: string;
 }
 
 export default function Modal({
@@ -21,6 +23,8 @@ export default function Modal({
   show,
   onClose,
   attachment,
+  downloadFile,
+  downloadHref,
 }: Props) {
   const modalRef = useRef();
 
@@ -55,7 +59,7 @@ export default function Modal({
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg text-left shadow-md transition-all sm:my-8 sm:w-full sm:max-w-lg border border-fox">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-lg text-left shadow-md transition-all sm:my-8 sm:w-full sm:max-w-xl border border-fox">
                 <div className="absolute pt-1 pr-1 top-0 right-0">
                   <button
                     type="button"
@@ -115,12 +119,14 @@ export default function Modal({
                 <div
                   className={`bg-[#16191d] px-4 py-3 sm:px-6 gap-2 ${attachment ? 'sm:flex sm:flex-row-reverse' : 'hidden'}`}
                 >
-                  <button
-                    type="button"
-                    className="inline-flex w-full justify-center hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-brand-fill px-3 py-1 sm:mt-0 sm:w-auto"
-                  >
-                    Download
-                  </button>
+                  <a className="" href={downloadHref} download={downloadFile}>
+                    <button
+                      type="button"
+                      className="inline-flex w-full justify-center hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-brand-fill px-3 py-1 sm:mt-0 sm:w-auto"
+                    >
+                      Download
+                    </button>
+                  </a>
                 </div>
               </Dialog.Panel>
             </Transition.Child>

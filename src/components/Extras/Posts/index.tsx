@@ -2,6 +2,7 @@ import Modal from '@app/components/common/Modal';
 import Link from 'next/link';
 import type React from 'react';
 import { useState } from 'react';
+import { SpecialZoomLevel, Viewer } from '@react-pdf-viewer/core';
 
 interface ExtraPostsProps {
   href: string;
@@ -11,15 +12,18 @@ interface ExtraPostsProps {
   image: string;
   attachment: boolean;
   content?: React.ReactNode;
+  downloadFile?: string;
+  downloadHref?: string;
 }
 
 const ExtraPosts: ExtraPostsProps[] = [
   {
     href: '/extras/business-card',
     title: 'Business Card',
+    subtitle: 'contact',
     image: '/headshot-200x200.png',
-    slug: <p>Feel free to download and take this with you.</p>,
-    content:
+    slug: <p>Feel free to download my contact and take it with you.</p>,
+    content: (
       <picture>
         <img
           className="rounded-lg mb-1"
@@ -30,24 +34,42 @@ const ExtraPosts: ExtraPostsProps[] = [
           decoding="async"
           loading="lazy"
         />
-      <img
-        className="rounded-lg"
-        src="/business-card-front.png"
-        alt="Card front"
-        width="750"
-        height="500"
-        decoding="async"
-        loading="lazy"
-      />
-    </picture>,
+        <img
+          className="rounded-lg"
+          src="/business-card-front.png"
+          alt="Card front"
+          width="750"
+          height="500"
+          decoding="async"
+          loading="lazy"
+        />
+      </picture>
+    ),
     attachment: true,
+    downloadFile: 'nicholas.wege.vcf',
+    downloadHref: '/nicholas.wege.vcf',
   },
   {
     href: '/extras/resume',
     title: 'Resume',
+    subtitle: 'pdf',
     image: '/headshot-200x200.png',
-    slug: <p>Looking to review my resume? Take a look.</p>,
+    slug: <p>Looking to review my resume? Take a look or download a copy.</p>,
+    content: (
+      <div className="w-full h-80">
+        <Viewer fileUrl="/nicholas.wege.pdf" defaultScale={SpecialZoomLevel.PageWidth} theme={{theme: 'dark'}} />
+      </div>
+    ),
     attachment: true,
+    downloadFile: 'nicholas.wege.pdf',
+    downloadHref: '/nicholas.wege.pdf',
+  },
+  {
+    href: '',
+    title: 'Funny Story',
+    image: '/headshot-200x200.png',
+    slug: <p className='mb-3'>My nickname is actually Mouse, but one day my sister called me nickelshits and it just stuck. So here I am branding myself with it.</p>,
+    attachment: false,
   },
 ];
 
@@ -61,6 +83,8 @@ const ExtraFeed = () => {
       image: '',
       attachment: false,
       content: null,
+      downloadFile: '',
+      downloadHref: '',
     },
   });
 
@@ -74,6 +98,8 @@ const ExtraFeed = () => {
           slug={openModal.data.slug}
           image={openModal.data.image}
           attachment={openModal.data.attachment}
+          downloadFile={openModal.data.downloadFile}
+          downloadHref={openModal.data.downloadHref}
           onClose={() => {
             setOpenModal({
               show: false,
@@ -84,6 +110,8 @@ const ExtraFeed = () => {
                 image: openModal.data.image,
                 attachment: openModal.data.attachment,
                 content: openModal.data.content,
+                downloadFile: openModal.data.downloadFile,
+                downloadHref: openModal.data.downloadHref,
               },
             });
           }}
@@ -108,6 +136,8 @@ const ExtraFeed = () => {
                   image: extraPost.image,
                   attachment: extraPost.attachment,
                   content: extraPost.content,
+                  downloadFile: extraPost.downloadFile,
+                  downloadHref: extraPost.downloadHref,
                 },
               });
             }}
@@ -143,6 +173,8 @@ const ExtraFeed = () => {
                           image: extraPost.image,
                           attachment: extraPost.attachment,
                           content: extraPost.content,
+                          downloadFile: extraPost.downloadFile,
+                          downloadHref: extraPost.downloadHref,
                         },
                       });
                     }}
@@ -174,7 +206,7 @@ const ExtraFeed = () => {
               </span>
             </div>
             <div>{extraPost.slug}</div>
-            <div className="card__actions flex justify-end items-center">
+            <div className={`${extraPost.attachment ? '' : 'hidden'} flex justify-end items-center`}>
               <button
                 title="View"
                 className="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-white hover:text-brand-stroke"
@@ -189,6 +221,8 @@ const ExtraFeed = () => {
                       image: extraPost.image,
                       attachment: extraPost.attachment,
                       content: extraPost.content,
+                      downloadFile: extraPost.downloadFile,
+                      downloadHref: extraPost.downloadHref,
                     },
                   });
                 }}
