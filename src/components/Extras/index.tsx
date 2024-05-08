@@ -1,4 +1,4 @@
-'use client';
+import ExtraFeed from '@app/components/Extras/Posts';
 
 export default function Extras({ activeTab }: { activeTab: string }) {
   return (
@@ -16,7 +16,9 @@ export default function Extras({ activeTab }: { activeTab: string }) {
             permalink
           </a>
         </div>
-        <p className="mb-8">Coming soon...</p>
+        <div className="mb-8">
+          <ExtraFeed />
+        </div>
       </div>
     </section>
   );
