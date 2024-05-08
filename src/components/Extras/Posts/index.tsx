@@ -33,15 +33,12 @@ const ExtraPosts: ExtraPostsProps[] = [
           height="500"
           decoding="async"
           loading="lazy"
-        />
-        <img
-          className="rounded-lg"
-          src="/business-card-front.png"
-          alt="Card front"
-          width="750"
-          height="500"
-          decoding="async"
-          loading="lazy"
+          onMouseOver={(e) =>
+            (e.currentTarget.src = '/business-card-front.png')
+          }
+          onFocus={(e) => (e.currentTarget.src = '/business-card-front.png')}
+          onMouseOut={(e) => (e.currentTarget.src = '/business-card-back.png')}
+          onBlur={(e) => (e.currentTarget.src = '/business-card-back.png')}
         />
       </picture>
     ),
@@ -57,7 +54,11 @@ const ExtraPosts: ExtraPostsProps[] = [
     slug: <p>Looking to review my resume? Take a look or download a copy.</p>,
     content: (
       <div className="w-full h-80">
-        <Viewer fileUrl="/nicholas.wege.pdf" defaultScale={SpecialZoomLevel.PageWidth} theme={{theme: 'dark'}} />
+        <Viewer
+          fileUrl="/nicholas.wege.pdf"
+          defaultScale={SpecialZoomLevel.PageWidth}
+          theme={{ theme: 'dark' }}
+        />
       </div>
     ),
     attachment: true,
@@ -68,7 +69,12 @@ const ExtraPosts: ExtraPostsProps[] = [
     href: '',
     title: 'Funny Story',
     image: '/headshot-200x200.png',
-    slug: <p className='mb-3'>My nickname is actually Mouse, but one day my sister called me nickelshits and it just stuck. So here I am branding myself with it.</p>,
+    slug: (
+      <p className="mb-3">
+        My nickname is actually Mouse, but one day my sister called me
+        nickelshits and it just stuck. So here I am branding myself with it.
+      </p>
+    ),
     attachment: false,
   },
 ];
@@ -206,7 +212,9 @@ const ExtraFeed = () => {
               </span>
             </div>
             <div>{extraPost.slug}</div>
-            <div className={`${extraPost.attachment ? '' : 'hidden'} flex justify-end items-center`}>
+            <div
+              className={`${extraPost.attachment ? '' : 'hidden'} flex justify-end items-center`}
+            >
               <button
                 title="View"
                 className="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-white hover:text-brand-stroke"
