@@ -24,23 +24,31 @@ const ExtraPosts: ExtraPostsProps[] = [
     image: '/headshot-200x200.png',
     slug: <p>Feel free to download my contact and take it with you.</p>,
     content: (
-      <><picture>
-        <img
-          className="rounded-lg mb-1"
-          src="/business-card-back.png"
-          alt="Business Card"
-          title='Tap or hover to flip'
-          width="750"
-          height="500"
-          decoding="async"
-          loading="lazy"
-          onMouseOver={(e) => (e.currentTarget.src = '/business-card-front.png')}
-          onFocus={(e) => (e.currentTarget.src = '/business-card-front.png')}
-          onMouseOut={(e) => (e.currentTarget.src = '/business-card-back.png')}
-          onBlur={(e) => (e.currentTarget.src = '/business-card-back.png')} />
-      </picture><p className="text-zinc-400 text-sm text-center font-thin">
+      <>
+        <picture>
+          <img
+            className="rounded-lg mb-1"
+            src="/business-card-back.png"
+            alt="Business Card"
+            title="Tap or hover to flip"
+            width="750"
+            height="500"
+            decoding="async"
+            loading="lazy"
+            onMouseOver={(e) =>
+              (e.currentTarget.src = '/business-card-front.png')
+            }
+            onFocus={(e) => (e.currentTarget.src = '/business-card-front.png')}
+            onMouseOut={(e) =>
+              (e.currentTarget.src = '/business-card-back.png')
+            }
+            onBlur={(e) => (e.currentTarget.src = '/business-card-back.png')}
+          />
+        </picture>
+        <p className="text-zinc-400 text-sm text-center font-thin">
           Tap or hover to flip the card!
-        </p></>
+        </p>
+      </>
     ),
     attachment: true,
     downloadFile: 'nicholas.wege.vcf',
@@ -95,7 +103,7 @@ const ExtraFeed = () => {
   });
 
   return (
-    <div className="grid gap-4">
+    <div className="grid gap-1">
       {openModal && (
         <Modal
           show={openModal.show}
