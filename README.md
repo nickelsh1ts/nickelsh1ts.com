@@ -2,35 +2,34 @@
 <img src="./public/logo_full.png" alt="nickelsh1ts" style="margin: 20px 0;">
 </p>
 
-Self-hosted portfolio and project site custom built in nextjs.
+Self-hosted personal developer portfolio and project site custom built in nextjs.
 
 ## Current Features
 
-Home page - Portfolio landing page, socials, etc.
+- Interactive feed with markdown posts and permalinks.
+- About section with personal story.
+- Projects section with current and past project work and links.
+- Extras section with interactive modal file downloads. (ie. resume, business card and contact)
+- Tabbed page design with zero reload and permalinks
+- Social links footer
+- Me at a glance header
 
-## Getting Started
+## Dev
+- `yarn`
+- `yarn build`
+- `yarn dev`
+OR
+- `docker compose up -d`
 
-Simply export and host dist directory.
+## Production
+- `docker build -t nickelsh1ts/nickelsh1ts.com:{version} .`
+- `docker save -o nickelsh1ts.com.tar nickelsh1ts/nickelsh1ts.com`
+- `docker load -i nickelsh1ts.com.tar`
+- `docker compose up -d`
 
 ## Preview
 
 <img src="./public/preview.png">
-
-## Support
-
-TBA
-
-## API Documentation
-
-TBA
-
-## Community
-
-TBA
-
-## Contributing
-
-TBA
 
 ## Contributors
 

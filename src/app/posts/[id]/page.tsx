@@ -75,7 +75,6 @@ export default async function Post({ params }: Props) {
             </div>
             <h2 className="mb-1 font-bold text-2xl">{postData.title}</h2>
             <div
-              className="mb-4"
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             ></div>
             <div className="card__actions flex justify-end items-center">

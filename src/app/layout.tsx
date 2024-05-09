@@ -8,6 +8,10 @@ import { InteractionProvider } from '@app/context/InteractionContext';
 import 'styles/css/globals.css';
 import ProgressBar from '@badrap/bar-of-progress';
 import { useEffect, useState } from 'react';
+import { Worker } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import packageJson from '@app/../package.json';
 
 const applicationTitle = 'nickelsh1ts';
 
@@ -28,6 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pdfjsVersion = packageJson.dependencies['pdfjs-dist'];
 
   useEffect(() => {
     const updateScrolled = () => {
@@ -46,18 +51,22 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html lang="en-CA" data-theme="fox">
-      <InteractionProvider>
-        <head>
-          <PWAHeader applicationTitle={applicationTitle} />
-        </head>
-        <ServiceWorkerSetup />
-      </InteractionProvider>
-      <body
-        className={`flex flex-col min-h-dvh ${isScrolled ? 'activeScroll' : ''}`}
-      >
-        <Layout>{children}</Layout>
-      </body>
-    </html>
+    <Worker
+      workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`}
+    >
+      <html lang="en-CA" data-theme="fox">
+        <InteractionProvider>
+          <head>
+            <PWAHeader applicationTitle={applicationTitle} />
+          </head>
+          <ServiceWorkerSetup />
+        </InteractionProvider>
+        <body
+          className={`flex flex-col min-h-dvh ${isScrolled ? 'activeScroll' : ''}`}
+        >
+          <Layout>{children}</Layout>
+        </body>
+      </html>
+    </Worker>
   );
 }

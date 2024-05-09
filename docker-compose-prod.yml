@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  nickelsh1ts:
+    container_name: nickelsh1ts.com
+    image: nickelsh1ts/nickelsh1ts.com:latest
+    restart: always
+    ports:
+      - 3025:3024

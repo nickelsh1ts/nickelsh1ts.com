@@ -79,8 +79,8 @@ const Header = () => {
         <div className="leading-tight mb-3">
           <p className="mb-2">You can code anything. 🧑🏼‍💻</p>
           <p className="mb-2">
-            Jr. Software Enigneer. ServiceNow developer. Creative Builder.
-            HomeLab Enthusiest. Tech Tinkerer. Pro Open Source.
+            Software Enigneer. ServiceNow developer. Creative Builder. HomeLab
+            Enthusiest. Tech Tinkerer. Pro Open Source.
           </p>
         </div>
         <span className="flex gap-x-4 items-center text-fluid--1 flex-wrap text-neutral-400">
