@@ -132,7 +132,7 @@
       ]
     ],
     "branches": [
-      "master"
+      "main"
     ],
     "npmPublish": false,
     "publish": [
