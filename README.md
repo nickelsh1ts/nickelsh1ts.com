@@ -15,13 +15,15 @@ Self-hosted personal developer portfolio and project site custom built in nextjs
 - Me at a glance header
 
 ## Dev
+
 - `yarn`
 - `yarn build`
 - `yarn dev`
-OR
+  OR
 - `docker compose up -d`
 
 ## Production
+
 - `docker build -t nickelsh1ts/nickelsh1ts.com:{version} .`
 - `docker save -o nickelsh1ts.com.tar nickelsh1ts/nickelsh1ts.com`
 - `docker load -i nickelsh1ts.com.tar`
