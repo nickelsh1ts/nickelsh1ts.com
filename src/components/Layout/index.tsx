@@ -10,13 +10,13 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
+      <PullToRefresh />
       <Nav />
       <img
         src="/android-chrome-512x512.png"
         alt="brand"
         className="watermark-fox"
       />
-      <PullToRefresh />
       {children}
       <Footer />
     </>
