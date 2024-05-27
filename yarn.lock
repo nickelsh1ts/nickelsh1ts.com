@@ -7119,9 +7119,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^13.6.6":
-  version: 13.6.6
-  resolution: "cypress@npm:13.6.6"
+"cypress@npm:^13.10.0":
+  version: 13.10.0
+  resolution: "cypress@npm:13.10.0"
   dependencies:
     "@cypress/request": "npm:^3.0.0"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -7167,7 +7167,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 10c0/1f152ac3708fc35c822b6fe428c0856b568c9b2d3f03a22de0526b9f21d6c345139061ae3515a652538a9570a2a632516e4548b29b39843865b9c88288b2d668
+  checksum: 10c0/ab53083b0557e6c1a1de0992563df91a75676113fc5d980fc36bdebeff4ea2eb2b66e67d504dbb36b4bdf33362aa738e98446f219755414e45135f48b607c1e3
   languageName: node
   linkType: hard
 
@@ -11893,7 +11893,7 @@ __metadata:
     copy-to-clipboard: "npm:3.3.3"
     country-flag-icons: "npm:1.5.9"
     cy-mobile-commands: "npm:^0.3.0"
-    cypress: "npm:^13.6.6"
+    cypress: "npm:^13.10.0"
     cz-conventional-changelog: "npm:3.3.0"
     date-fns: "npm:^3.6.0"
     debounce: "npm:^2.0.0"
