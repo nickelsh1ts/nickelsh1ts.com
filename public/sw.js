@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 // Incrementing OFFLINE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 // This variable is intentionally declared and unused.

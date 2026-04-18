@@ -1,23 +1,17 @@
-'use client';
-
-import { SpecialZoomLevel, Viewer, Worker } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-
-const PDFJS_VERSION = '3.11.174';
-
 export default function PdfResumeViewer() {
   return (
-    <Worker
-      workerUrl={`https://unpkg.com/pdfjs-dist@${PDFJS_VERSION}/build/pdf.worker.min.js`}
-    >
-      <div className="w-full h-80">
-        <Viewer
-          fileUrl="/nicholas.wege.pdf"
-          defaultScale={SpecialZoomLevel.PageWidth}
-          theme={{ theme: 'dark' }}
-        />
-      </div>
-    </Worker>
+    <div className="grid gap-3">
+      <iframe
+        src="/nicholas.wege.pdf"
+        title="Nicholas Wege resume"
+        className="h-[40vh] min-h-80 w-full rounded-md border border-zinc-700 bg-zinc-950"
+        loading="lazy"
+        referrerPolicy="no-referrer"
+      />
+      <p className="text-sm text-zinc-400">
+        If your browser blocks inline PDF viewing, use the download button
+        below.
+      </p>
+    </div>
   );
 }

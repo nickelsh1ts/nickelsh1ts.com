@@ -1,13 +1,9 @@
 'use client';
 import Modal from '@components/common/Modal';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import type React from 'react';
 import { useState } from 'react';
-
-const PdfResumeViewer = dynamic(() => import('./PdfResumeViewer'), {
-  ssr: false,
-});
+import PdfResumeViewer from './PdfResumeViewer';
 
 interface ExtraPostsProps {
   href?: string;

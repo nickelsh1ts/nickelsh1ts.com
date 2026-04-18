@@ -1,5 +1,5 @@
 /** @type {import('stylelint').Config} */
-export default {
+const config = {
   extends: [
     'stylelint-config-standard',
     '@dreamsicle.io/stylelint-config-tailwindcss',
@@ -21,3 +21,5 @@ export default {
     ],
   },
 };
+
+export default config;
