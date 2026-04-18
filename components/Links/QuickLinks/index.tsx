@@ -9,8 +9,8 @@ const QuickLinks = () => {
   async function onShare() {
     try {
       await navigator.share(shareData);
-    } catch (err) {
-      console.log('oops something went wrong');
+    } catch (error) {
+      console.error('Share failed.', error);
     }
   }
   return (

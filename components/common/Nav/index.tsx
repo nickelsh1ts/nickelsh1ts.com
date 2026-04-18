@@ -1,5 +1,6 @@
 'use client';
 import Link from '@node_modules/next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const Nav = () => {
@@ -36,7 +37,12 @@ const Nav = () => {
           className="w-11 h-11 grid place-items-center hover:bg-zinc-700 p-1 rounded-md "
           href="/"
         >
-          <img className="" src="/apple-touch-icon.png" alt="nickelsh1ts" />
+          <Image
+            src="/apple-touch-icon.png"
+            alt="nickelsh1ts"
+            width={36}
+            height={36}
+          />
           <span className="sr-only">nickelsh1ts</span>
         </Link>
       </div>
