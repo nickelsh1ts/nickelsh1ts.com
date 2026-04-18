@@ -8,8 +8,35 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
+      time: '07:00'
+      timezone: 'America/New_York'
+    cooldown:
+      default-days: 5
+      semver-major-days: 60
+      semver-minor-days: 14
+      semver-patch-days: 5
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'weekly'
+      day: 'sunday'
+      time: '08:00'
+      timezone: 'America/New_York'
+    labels:
+      - dependencies
+      - github-actions
+    commit-message:
+      prefix: 'ci'
+      include: scope
+    groups:
+      github-actions:
+        patterns:
+          - '*'
+  - package-ecosystem: 'docker'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'sunday'
+      time: '09:00'
+      timezone: 'America/New_York'

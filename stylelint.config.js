@@ -1,20 +1,23 @@
-module.exports = {
-  ignoreFiles: ['**/*.js'],
+/** @type {import('stylelint').Config} */
+export default {
+  extends: [
+    'stylelint-config-standard',
+    '@dreamsicle.io/stylelint-config-tailwindcss',
+  ],
   rules: {
     'at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: [
+          'plugin',
+          'theme',
+          'variant',
+          'utility',
           'tailwind',
           'apply',
-          'variants',
-          'responsive',
-          'screen',
-          'layer',
+          'custom-variant',
         ],
       },
     ],
-    'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null,
   },
 };
