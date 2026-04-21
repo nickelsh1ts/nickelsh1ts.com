@@ -13,15 +13,19 @@ export default function Error({
   }, [error]);
 
   return (
-    <main className="mt-auto text-center">
-      <h2 className="text-3xl my-3">Something went wrong!</h2>
-      <button
-        type="button"
-        className="text-md"
-        onClick={() => reset()}
-      >
-        Try again
-      </button>
-    </main>
+    <html lang="en-CA" data-theme="fox">
+      <body className="flex flex-col min-h-dvh">
+        <main className="mt-auto text-center">
+          <h2 className="text-3xl my-3">Something went wrong!</h2>
+          <button
+            type="button"
+            className="text-md"
+            onClick={() => reset()}
+          >
+            Try again
+          </button>
+        </main>
+      </body>
+    </html>
   );
 }
