@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/aspect-ratio";
+
+@theme {
+  --color-primary: #f58a07;
+  --color-primary-content: #fff;
+  --color-secondary: #080011;
+  --color-secondary-content: #cfcbdc;
+  --color-accent: #e5a00d;
+  --color-accent-content: #fff;
+  --color-neutral: #737373;
+  --color-neutral-content: #e0e2e4;
+  --color-base-100: #121212;
+  --color-base-200: #161616;
+  --color-base-300: #1f1f1f;
+  --color-base-content: #fff;
+  --color-info: #2563eb;
+  --color-info-content: #d2e2ff;
+  --color-success: #84cc16;
+  --color-success-content: #fff;
+  --color-warning: #ffc107;
+  --color-warning-content: #fff;
+  --color-error: #b91c1c;
+  --color-error-content: #fff;
+  --color-fox: #f58a07;
+}
+
+:root {
+  --width: 724px;
+  --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+}
+
+:root,
+[data-theme] {
+  background-color: var(--fallback-b1, oklch(var(--b1) / 100%));
+  color: var(--fallback-bc, oklch(var(--bc) / 100%));
+}
+
+[data-theme='fox'] {
+  color-scheme: dark;
+
+  --b2: 91.6146% 0 0;
+  --b3: 84.7189% 0 0;
+  --bc: 100% 0 0;
+  --pc: 14.38% 0.0714 330.7596;
+  --sc: 14.674% 0.0448 48.2509;
+  --ac: 18.556% 0.0528 122.9630;
+  --nc: 84.262% 0.0256 278.68;
+  --inc: 12.144% 0.0454 252.05;
+  --suc: 17.144% 0.0532 158.53;
+  --wac: 18.202% 0.0424 100.5;
+  --erc: 12.968% 0.0586 29.3492;
+  --animation-btn: 0.25s;
+  --animation-input: 0.2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --p: 71.9% 0.357 330.7596;
+  --s: 73.37% 0.224 48.2509;
+  --a: 92.78% 0.264 122.9630;
+  --n: 21.31% 0.128 278.68;
+  --b1: 21.2% 0.009 255.61;
+  --in: 60.72% 0.227 252.05;
+  --su: 85.72% 0.266 158.53;
+  --wa: 91.01% 0.212 100.5;
+  --er: 64.84% 0.293 29.3492;
+  --rounded-box: 1.25rem;
+  --rounded-btn: 1rem;
+  --rounded-badge: 1rem;
+  --tab-radius: 0.7rem;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.watermark-fox {
+  height: 65vh;
+  width: auto;
+  opacity: 0.05;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translate(40%);
+  z-index: -1;
+}
+
+@layer base {
+  a {
+    @apply hover:underline text-fox;
+
+    text-decoration-thickness: 4px;
+    text-underline-offset: 2px;
+  }
+}
+
+.bg-surface-alpha {
+  background-color: hsl(214deg 14% 10% / 65%);
+}
+
+.w-feature {
+  width: var(--width);
+}
+
+.text-fluid-3 {
+  font-size: var(--step-3);
+}
+
+.w-content {
+  width: calc(var(--width) * 0.84);
+}
