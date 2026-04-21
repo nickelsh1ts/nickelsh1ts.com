@@ -1,5 +1,11 @@
 import { Fragment, useRef } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  Transition,
+  TransitionChild,
+} from '@headlessui/react';
 import type React from 'react';
 
 interface Props {
@@ -29,14 +35,14 @@ export default function Modal({
   const modalRef = useRef<HTMLDivElement>(null);
 
   return (
-    <Transition.Root show={show} as={Fragment} ref={modalRef}>
+    <Transition show={show} as={Fragment} ref={modalRef}>
       <Dialog
         as="div"
         className="relative z-10"
         initialFocus={modalRef}
         onClose={onClose ? onClose : () => {}}
       >
-        <Transition.Child
+        <TransitionChild
           as={Fragment}
           enter="ease-out duration-300"
           enterFrom="opacity-0"
@@ -46,11 +52,11 @@ export default function Modal({
           leaveTo="opacity-0"
         >
           <div className="fixed inset-0 bg-surface-alpha transition-opacity" />
-        </Transition.Child>
+        </TransitionChild>
 
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-            <Transition.Child
+            <TransitionChild
               as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
@@ -59,7 +65,7 @@ export default function Modal({
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg text-left shadow-md transition-all sm:my-8 sm:w-full sm:max-w-xl border border-fox">
+              <DialogPanel className="relative transform overflow-hidden rounded-lg text-left shadow-md transition-all sm:my-8 sm:w-full sm:max-w-xl border border-fox">
                 <div className="absolute pt-1 pr-1 top-0 right-0">
                   <button
                     type="button"
@@ -105,12 +111,12 @@ export default function Modal({
                       </p>
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                      <Dialog.Title
+                      <DialogTitle
                         as="h3"
                         className="text-base font-semibold leading-6 text-fox"
                       >
                         {title}
-                      </Dialog.Title>
+                      </DialogTitle>
                       <div className="mt-2">{slug}</div>
                       <div className="mt-2">{content}</div>
                     </div>
@@ -128,11 +134,11 @@ export default function Modal({
                     </button>
                   </a>
                 </div>
-              </Dialog.Panel>
-            </Transition.Child>
+              </DialogPanel>
+            </TransitionChild>
           </div>
         </div>
       </Dialog>
-    </Transition.Root>
+    </Transition>
   );
 }
