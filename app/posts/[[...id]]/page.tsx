@@ -18,6 +18,7 @@ type PostData = {
   tag: string;
   emoji: string;
   pinned: boolean;
+  liked?: boolean;
 };
 
 async function getPostId(params: Props['params']) {
@@ -113,12 +114,11 @@ export default async function Post({ params }: Props) {
               <button
                 title="Like post"
                 disabled={true}
-                className="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20"
+                className={`w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20 ${postData.liked ? 'fill-error text-error opacity-80' : ''}`}
               >
                 <span className="sr-only">Like</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"

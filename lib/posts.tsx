@@ -28,6 +28,7 @@ export function getSortedPostsData() {
         tag: string;
         emoji: string;
         pinned: boolean;
+        liked: boolean;
       }),
     };
   });
