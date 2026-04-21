@@ -2,9 +2,9 @@ export default function PdfResumeViewer() {
   return (
     <div className="grid gap-3">
       <iframe
-        src="/nicholas.wege.pdf"
+        src="/nicholas.wege.pdf#toolbar=0&navpanes=0"
         title="Nicholas Wege resume"
-        className="h-[40vh] min-h-80 w-full rounded-md border border-zinc-700 bg-zinc-950"
+        className="h-[30vh] min-h-80 w-full rounded-md border border-zinc-700 bg-zinc-950"
         loading="lazy"
         referrerPolicy="no-referrer"
       />
