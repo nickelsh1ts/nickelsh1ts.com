@@ -35,37 +35,38 @@
 
 :root,
 [data-theme] {
-  background-color: var(--fallback-b1, oklch(var(--b1) / 1));
-  color: var(--fallback-bc, oklch(var(--bc) / 1));
+  background-color: var(--fallback-b1, oklch(var(--b1) / 100%));
+  color: var(--fallback-bc, oklch(var(--bc) / 100%));
 }
 
 [data-theme='fox'] {
   color-scheme: dark;
+
   --b2: 91.6146% 0 0;
   --b3: 84.7189% 0 0;
   --bc: 100% 0 0;
-  --pc: 14.38% 0.0714 330.759573;
-  --sc: 14.674% 0.0448 48.250878;
-  --ac: 18.556% 0.0528 122.962951;
+  --pc: 14.38% 0.0714 330.7596;
+  --sc: 14.674% 0.0448 48.2509;
+  --ac: 18.556% 0.0528 122.9630;
   --nc: 84.262% 0.0256 278.68;
   --inc: 12.144% 0.0454 252.05;
   --suc: 17.144% 0.0532 158.53;
   --wac: 18.202% 0.0424 100.5;
-  --erc: 12.968% 0.0586 29.349188;
+  --erc: 12.968% 0.0586 29.3492;
   --animation-btn: 0.25s;
   --animation-input: 0.2s;
   --btn-focus-scale: 0.95;
   --border-btn: 1px;
   --tab-border: 1px;
-  --p: 71.9% 0.357 330.759573;
-  --s: 73.37% 0.224 48.250878;
-  --a: 92.78% 0.264 122.962951;
+  --p: 71.9% 0.357 330.7596;
+  --s: 73.37% 0.224 48.2509;
+  --a: 92.78% 0.264 122.9630;
   --n: 21.31% 0.128 278.68;
   --b1: 21.2% 0.009 255.61;
   --in: 60.72% 0.227 252.05;
   --su: 85.72% 0.266 158.53;
   --wa: 91.01% 0.212 100.5;
-  --er: 64.84% 0.293 29.349188;
+  --er: 64.84% 0.293 29.3492;
   --rounded-box: 1.25rem;
   --rounded-btn: 1rem;
   --rounded-badge: 1rem;
@@ -80,6 +81,7 @@
 
 .watermark-fox {
   height: 65vh;
+  width: auto;
   opacity: 0.05;
   position: fixed;
   right: 0;
@@ -91,13 +93,14 @@
 @layer base {
   a {
     @apply hover:underline text-fox;
+
     text-decoration-thickness: 4px;
     text-underline-offset: 2px;
   }
 }
 
 .bg-surface-alpha {
-  background-color: hsl(214 14% 10% / 65%);
+  background-color: hsl(214deg 14% 10% / 65%);
 }
 
 .w-feature {

@@ -20,8 +20,8 @@ const Layout = ({ children }: LayoutProps) => {
         src="/android-chrome-512x512.png"
         alt="brand"
         className="watermark-fox"
-        width={612}
-        height={512}
+        width={838}
+        height={838}
         priority
       />
       {!pathname.match(/^\/(links)/) && <Header />}
