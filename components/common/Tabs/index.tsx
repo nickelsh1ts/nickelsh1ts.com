@@ -27,7 +27,7 @@ const Tabs = ({ tabs }: { tabs: TabsProps[] }) => {
             >
               <Link
                 href={tab.href}
-                className={`${activeTab ? 'active' : ''} font-bold grid place-items-center w-full h-full text-neutral-400 hover:no-underline focus-visible:outline-0 focus-visible:bg-zinc-700"`}
+                className={`${activeTab ? 'active' : ''} font-bold grid place-items-center w-full h-full text-neutral-400 hover:no-underline focus-visible:outline-0 focus-visible:bg-zinc-700`}
                 id={tab.id}
               >
                 <span

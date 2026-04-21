@@ -14,7 +14,7 @@ export default function Header() {
           preload="auto"
           onContextMenu={(e) => e.preventDefault()}
         >
-          <source src="mp4/bg-v1.mp4" type="video/mp4" />
+          <source src="/mp4/bg-v1.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="w-content max-w-full mv-0 mx-auto grid gap-0 px-4">

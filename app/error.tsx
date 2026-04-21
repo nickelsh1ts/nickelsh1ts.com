@@ -1,11 +1,5 @@
 'use client';
-import type { Metadata } from 'next';
-import Link from 'next/link';
 import { useEffect } from 'react';
-
-export const metadata: Metadata = {
-  title: 'ERROR - nickelsh1ts.com',
-};
 
 export default function Error({
   error,
@@ -21,15 +15,13 @@ export default function Error({
   return (
     <main className="mt-auto text-center">
       <h2 className="text-3xl my-3">Something went wrong!</h2>
-      <Link
+      <button
+        type="button"
         className="text-md"
-        href={''}
-        onClick={
-          () => reset()
-        }
+        onClick={() => reset()}
       >
         Try again
-      </Link>
+      </button>
     </main>
   );
 }
