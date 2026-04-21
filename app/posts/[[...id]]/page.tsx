@@ -59,7 +59,6 @@ export function generateStaticParams() {
   }));
 }
 
-// -< Post >-
 export default async function Post({ params }: Props) {
   const postId = await getPostId(params);
   const postData: PostData = await getRoutePostData(params);
