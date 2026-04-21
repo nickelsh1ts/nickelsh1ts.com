@@ -1,10 +1,10 @@
-import Feed from '@components/Feed';
+import Projects from '@components/Projects';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Projects – nickelsh1ts.com',
+  title: 'Projects - nickelsh1ts.com',
 };
 
 export default function ProjectsPage() {
-  return <Feed pageTab={'tab3'} />;
+  return <Projects />;
 }

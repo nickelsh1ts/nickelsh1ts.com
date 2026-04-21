@@ -1,25 +1,12 @@
 'use client';
-
-export default function Projects({ activeTab }: { activeTab: string }) {
+export default function Projects() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <section
-      data-tab-panel="true"
-      id="/projects"
-      className={`${activeTab === 'tab3' ? 'block' : 'hidden'}`}
-      role="tabpanel"
-      tabIndex={-1}
-      aria-labelledby="tab3"
-    >
+    <section>
       <div className="px-4">
-        <div className="flex justify-end mb-4">
-          <a href="/projects" className="text-sm font-bold">
-            permalink
-          </a>
-        </div>
         <p className="mb-8">
           Quite often I&apos;m working on a number of things simultaneously.
           Here you will find links and details on all such things.

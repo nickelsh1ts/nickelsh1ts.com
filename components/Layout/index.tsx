@@ -1,7 +1,9 @@
 'use client';
-import PullToRefresh from '@components/Layout/PullToRefresh';
 import Footer from '@components/common/Footer';
+import Header from '@components/common/Header';
 import Nav from '@components/common/Nav';
+import Tabs from '@components/common/Tabs';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 type LayoutProps = {
@@ -9,6 +11,8 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => {
+  const pathname = usePathname();
+
   return (
     <>
       <Nav />
@@ -16,12 +20,44 @@ const Layout = ({ children }: LayoutProps) => {
         src="/android-chrome-512x512.png"
         alt="brand"
         className="watermark-fox"
-        width={512}
+        width={612}
         height={512}
         priority
       />
-      <PullToRefresh />
-      {children}
+      {!pathname.match(/^\/(links)/) && <Header />}
+      <main className="w-content max-w-full mx-auto flex flex-col justify-center pt-4 gap-8">
+        {!pathname.match(/^\/(links)/) && (
+          <Tabs
+            tabs={[
+              {
+                id: 'feed',
+                title: 'Feed',
+                href: '/feed',
+                regExp: /^\/(feed)?$/,
+              },
+              {
+                id: 'about',
+                title: 'About',
+                href: '/about',
+                regExp: /^\/about/,
+              },
+              {
+                id: 'projects',
+                title: 'Projects',
+                href: '/projects',
+                regExp: /^\/projects/,
+              },
+              {
+                id: 'extras',
+                title: 'Extras',
+                href: '/extras',
+                regExp: /^\/extras/,
+              },
+            ]}
+          />
+        )}
+        {children}
+      </main>
       <Footer />
     </>
   );

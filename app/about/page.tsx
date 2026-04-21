@@ -1,10 +1,10 @@
-import Feed from '@components/Feed';
+import About from '@components/About';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About – nickelsh1ts.com',
+  title: 'About - nickelsh1ts.com',
 };
 
 export default function AboutPage() {
-  return <Feed pageTab={'tab2'} />;
+  return <About />;
 }

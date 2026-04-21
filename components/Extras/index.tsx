@@ -1,21 +1,9 @@
 import ExtraFeed from '@components/Extras/Posts';
 
-export default function Extras({ activeTab }: { activeTab: string }) {
+export default function Extras() {
   return (
-    <section
-      data-tab-panel="true"
-      id="/extras"
-      className={`${activeTab === 'tab4' ? 'block' : 'hidden'}`}
-      role="tabpanel"
-      tabIndex={-1}
-      aria-labelledby="tab4"
-    >
+    <section>
       <div className="px-4">
-        <div className="flex justify-end mb-4">
-          <a href="/extras" className="text-sm font-bold">
-            permalink
-          </a>
-        </div>
         <div className="mb-8">
           <ExtraFeed />
         </div>

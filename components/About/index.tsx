@@ -1,21 +1,7 @@
-'use client';
-
-export default function About({ activeTab }: { activeTab: string }) {
+export default function About() {
   return (
-    <section
-      data-tab-panel="true"
-      id="/about"
-      className={`${activeTab === 'tab2' ? 'block' : 'hidden'}`}
-      role="tabpanel"
-      tabIndex={-1}
-      aria-labelledby="tab2"
-    >
+    <section>
       <div className="px-4">
-        <div className="flex justify-end mb-4">
-          <a href="/about" className="text-sm font-bold">
-            permalink
-          </a>
-        </div>
         <h2 className="mb-2 font-bold text-3xl">Hey there! 🤝</h2>
         <p className="mb-6">
           I&apos;m Nicholas aka nickelshits. I&apos;m a web enthusiast and

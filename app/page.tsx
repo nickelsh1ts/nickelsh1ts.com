@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const Index: NextPage = () => {
-  return <Feed pageTab={'tab1'} />;
+  return <Feed />;
 };
 
 export default Index;
