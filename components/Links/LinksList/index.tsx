@@ -11,22 +11,22 @@ interface LinkProps {
 const LinkItems: LinkProps[] = [
   {
     text: 'NickflixTV - self-hosted private streaming service',
-    link: 'https://nickflixtv.com',
+    link: 'https://www.nickflixtv.com',
     target: '_self',
     imageSrc: '/nickflixtv-logo_maskable-512x512.png',
     imageAlt: 'NickflixTV logo',
+  },
+  {
+    text: 'Streamarr - Open-source media server manager',
+    link: 'https://streamarr.dev',
+    imageSrc: '/streamarr-logo_maskable-192x192.png',
+    imageAlt: 'Streamarr logo',
   },
   {
     text: 'CloudSh1ts - self-hosted cloud infrastructure',
     link: 'https://cloud.nickelsh1ts.com',
     imageSrc: '/next-cloud.svg',
     imageAlt: 'Nextcloud logo',
-  },
-  {
-    text: 'OnlyOffice - self-hosted office suite',
-    link: 'https://office.nickelsh1ts.com',
-    imageSrc: '/onlyoffice.png',
-    imageAlt: 'OnlyOffice logo',
   },
 ];
 

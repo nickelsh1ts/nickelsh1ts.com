@@ -15,16 +15,17 @@ export default function Projects() {
           <h2 className="font-bold text-xl">NickflixTV</h2>
           <p className="mb-6">
             I built and administer my own self-hosted and fully autonomous
-            streaming platform.
+            streaming platform. Backed by my own open-source application
+            Streamarr.
           </p>
           <ul>
             <li className="mb-2">
               <a
-                href="https://nickflixtv.com"
+                href="https://www.nickflixtv.com"
                 target="blank"
                 className="leading-tight"
               >
-                NickflixTV Streaming Application
+                NickflixTV Streaming Platform
               </a>
               <p className="text-sm text-neutral-400">NICKFLIXTV - Nov 2020</p>
             </li>
@@ -34,9 +35,9 @@ export default function Projects() {
                 target="blank"
                 className="leading-tight"
               >
-                Streamarr - open-sourced NickflixTV shell
+                Streamarr - open-sourced project
               </a>
-              <p className="text-sm text-neutral-400">NICKELSH1TS - TBA 2024</p>
+              <p className="text-sm text-neutral-400">NICKELSH1TS - Apr 2026</p>
             </li>
             <li className="mb-2">
               <a
@@ -47,55 +48,6 @@ export default function Projects() {
                 Platform videos and samples
               </a>
               <p className="text-sm text-neutral-400">YOUTUBE - Apr 2021</p>
-            </li>
-          </ul>
-        </section>
-        <section className="mb-8">
-          <h2 className="font-bold text-xl">nickelsh1ts</h2>
-          <p className="mb-6">
-            I gave my &quot;brand&quot; and homelab a name. I work on, build and
-            run a whole lot of things.
-          </p>
-          <ul>
-            <li className="mb-2">
-              <a
-                href="https://cloud.nickelsh1ts.com"
-                target="blank"
-                className="leading-tight"
-              >
-                Self-hosted personal cloud
-              </a>
-              <p className="text-sm text-neutral-400">NEXTCLOUD</p>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://office.nickelsh1ts.com"
-                target="blank"
-                className="leading-tight"
-              >
-                Fully online office suit
-              </a>
-              <p className="text-sm text-neutral-400">ONLYOFFICE</p>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://plane.nickelsh1ts.com/"
-                target="blank"
-                className="leading-tight"
-              >
-                Project Management Suite
-              </a>
-              <p className="text-sm text-neutral-400">PLANE</p>
-            </li>
-            <li className="mb-2">
-              <a
-                href="https://uptime.nickelsh1ts.com/status/systems"
-                target="blank"
-                className="leading-tight"
-              >
-                Service Uptime Status
-              </a>
-              <p className="text-sm text-neutral-400">UPTIME KUMA</p>
             </li>
           </ul>
         </section>
@@ -139,8 +91,8 @@ export default function Projects() {
             <li className="mb-2">
               <p className="leading-tight">Home Gaming PC</p>
               <p className="text-sm text-neutral-400">
-                ABS Gladiator Gaming PC - 16GB DDR4 3000MHz - 1TB Intel M.2 NVMe
-                SSD
+                ABS Gladiator Gaming PC - 64GB DDR4 3000MHz - 1TB Intel M.2 NVMe
+                SSD, 2TB Crucial P3 NVMe SSD
               </p>
               <p className="text-sm text-neutral-400">
                 Operating System: Windows 11 64-bit
@@ -244,7 +196,7 @@ export default function Projects() {
                     target="blank"
                     className="leading-tight"
                   >
-                    Overseerr
+                    Seerr
                   </a>
                   <p className="text-sm text-neutral-400">Request Management</p>
                 </li>
@@ -320,16 +272,6 @@ export default function Projects() {
                 </li>
                 <li className="mb-2">
                   <a
-                    href="https://readarr.com/"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    Readarr
-                  </a>
-                  <p className="text-sm text-neutral-400">eBook Manager</p>
-                </li>
-                <li className="mb-2">
-                  <a
                     href="https://goauthentik.io/"
                     target="blank"
                     className="leading-tight"
@@ -349,16 +291,6 @@ export default function Projects() {
                     NETDATA
                   </a>
                   <p className="text-sm text-neutral-400">Monitoring</p>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="https://dozzle.dev/"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    Dozzle
-                  </a>
-                  <p className="text-sm text-neutral-400">Logging</p>
                 </li>
                 <li className="mb-2">
                   <a
@@ -446,6 +378,16 @@ export default function Projects() {
                 </li>
                 <li className="mb-2">
                   <a
+                    href="https://www.qbittorrent.org/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Qbittorrent
+                  </a>
+                  <p className="text-sm text-neutral-400">BitTorrent Client</p>
+                </li>
+                <li className="mb-2">
+                  <a
                     href="https://www.firefly-iii.org/"
                     target="blank"
                     className="leading-tight"
@@ -453,16 +395,6 @@ export default function Projects() {
                     FireFlyiii
                   </a>
                   <p className="text-sm text-neutral-400">Finance Manager</p>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="https://flood.js.org/"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    Flood
-                  </a>
-                  <p className="text-sm text-neutral-400">BitTorrent UI</p>
                 </li>
                 <li className="mb-2">
                   <a
@@ -476,13 +408,23 @@ export default function Projects() {
                 </li>
                 <li className="mb-2">
                   <a
-                    href="https://plane.so/"
+                    href="https://traefik.io/traefik/"
                     target="blank"
                     className="leading-tight"
                   >
-                    Plane
+                    Traefik
                   </a>
-                  <p className="text-sm text-neutral-400">Project Management</p>
+                  <p className="text-sm text-neutral-400">Reverse Proxy</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://netbird.io/"
+                    target="_blank"
+                    className="leading-tight"
+                  >
+                    Netbird
+                  </a>
+                  <p className="text-sm text-neutral-400">VPN</p>
                 </li>
                 <li className="mb-2">
                   <a
@@ -513,48 +455,6 @@ export default function Projects() {
                     VaultWarden
                   </a>
                   <p className="text-sm text-neutral-400">Vault Service</p>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="https://js.wiki/"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    WikiJS
-                  </a>
-                  <p className="text-sm text-neutral-400">Wiki Server</p>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="https://www.activepieces.com/"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    ActivePieces
-                  </a>
-                  <p className="text-sm text-neutral-400">
-                    Automation Platform
-                  </p>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="https://github.com/dbeaver/cloudbeaver"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    CloudBeaver
-                  </a>
-                  <p className="text-sm text-neutral-400">Database Manager</p>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="https://duplicacy.com/"
-                    target="blank"
-                    className="leading-tight"
-                  >
-                    Duplicacy
-                  </a>
-                  <p className="text-sm text-neutral-400">Backups</p>
                 </li>
                 <li className="mb-2">
                   <a
@@ -606,14 +506,70 @@ export default function Projects() {
                   </a>
                   <p className="text-sm text-neutral-400">Web Server</p>
                 </li>
+                <li className="mb-2">
+                  <a
+                    href="https://it-tools.tech/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    IT Tools
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    software and hardware utilities
+                  </p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://kometa.wiki/en/latest/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Kometa
+                  </a>
+                  <p className="text-sm text-neutral-400">Custom Metadata</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://mastodon.social/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    Mastadon
+                  </a>
+                  <p className="text-sm text-neutral-400">Social Media</p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://nodejs.org/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    NodeJS
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    Runtime Environment
+                  </p>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://n8n.io/"
+                    target="blank"
+                    className="leading-tight"
+                  >
+                    n8n
+                  </a>
+                  <p className="text-sm text-neutral-400">
+                    Workflow Automation
+                  </p>
+                </li>
               </ul>
             </li>
           </ul>
         </section>
         <section className="mb-8">
-          <h2 className="font-bold mb-2 text-xl">More coming soon...</h2>
+          <h2 className="font-bold mb-2 text-xl">+ many more</h2>
           <p className="mb-6">
-            I&apos;m still working on this page. Come check back later.
+            I&apos;m always spinning up new services and testing them out.
           </p>
           <ul>
             <li className="mb-2">

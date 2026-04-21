@@ -4,26 +4,29 @@ export default function About() {
       <div className="px-4">
         <h2 className="mb-2 font-bold text-3xl">Hey there! 🤝</h2>
         <p className="mb-6">
-          I&apos;m Nicholas aka nickelshits. I&apos;m a web enthusiast and
-          developer who loves to automate life one line of code at a time.
+          I&apos;m Nick aka nickelshits. Currently a Software Engineer and
+          ServiceNow developer with a passion for learning and creating. I enjoy
+          working on projects that challenge me and allow me to grow my skills.
+          In my free time, I like to explore new technologies, contribute to
+          open source projects, and build fun things.
         </p>
         <p className="mb-6">
-          I am an advocate of Open Source and its methodology. I enjoy playing
-          around and building in this space.
+          I am based in Toronto, Canada and employed as a ServiceNow developer
+          and System Administrator at Flight Centre Travel Group.
         </p>
         <p className="mb-6">
-          I&apos;m known for my creative applications and determination to make
-          everything easier and faster with automation&apos;s and codes.
-          It&apos;s astonishing how much information can be found when you open
-          a computer. It&apos;s even more amazing how all this knowledge can
-          help you do anything you put your mind to.
+          Starting my Technology career almost 10 years ago now, I have made my
+          way through various roles in the IT industry. Starting as a Level 1
+          Help Desk Technician, I quickly moved up to a Level 2 role and then
+          level 3 before making the jump to ServiceNow development and software
+          engineering.
         </p>
         <figure className="grid place-items-center my-6">
           <picture>
             <img
               className="rounded-lg mb-2"
               src="/nick-at-toughmudder.jpg"
-              alt=""
+              alt="Nick at the finish line of a 16km obstacle course"
               width="600"
               height="300"
               decoding="async"
@@ -37,23 +40,18 @@ export default function About() {
         </figure>
         <p className="mb-6">
           I&apos;ve been fortunate enough to develop and learn the skills I have
-          from some great mentors over the course of my adult career. I&apos;m
-          currently a Jr. Software Engineer at Flight Centre Travel Group where
-          I work on our ServiceNow platform.
+          from some great mentors over the course of my adult career, while also
+          taking the initiative to learn on my own. Creating and building
+          applications within ServiceNow as well as developing Typescript and
+          React applications on my own.
         </p>
         <p className="mb-6">
           It may be surprising to learn but I have never had any formal
-          education in computer sciences or development. That&apos;s not to say
-          I&apos;m not always learning or messing around in something new. I
-          thrive on the determination to make new things work. Constantly
-          researching and participating in trainings to understand and build
-          something creative and effective.
-        </p>
-        <p className="mb-6">
-          Besides ServiceNow, I dabble in Node and React applications{' '}
-          <i className="text-fox/90">(like this!)</i>. I can work with CSS,
-          Javascript and typescript. I pride myself on being a quick learner
-          able to jump in and work under pressure.
+          education in computer sciences or development. I don&apos;t consider
+          this a limitation. I thrive on the determination to learn and build
+          new things. Constantly researching and participating in trainings to
+          understand and build something creative and effective. Always trying
+          to stay current.
         </p>
         <p className="mb-6">
           I&apos;m an open book. Feel free to reach out anytime!
@@ -61,7 +59,7 @@ export default function About() {
         <p className="">
           <strong className="bold">Cheers,</strong>
         </p>
-        <p className="mb-6 fill-white">
+        <p className="mb-6 fill-fox">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"

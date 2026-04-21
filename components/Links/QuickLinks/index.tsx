@@ -42,7 +42,7 @@ const QuickLinks = () => {
       </div>
       <div>
         <button
-          className="text-white w-10 h-10 grid place-items-center rounded-md hover:bg-zinc-700 mx-auto"
+          className="text-white w-10 h-10 grid place-items-center rounded-md hover:bg-zinc-700 mx-auto hover:cursor-pointer"
           onClick={onShare}
         >
           <svg
