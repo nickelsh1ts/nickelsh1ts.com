@@ -16,7 +16,7 @@ const ServiceWorkerSetup = () => {
           console.log('[SW] Service worker registration failed, error:', error);
         });
     }
-  });
+  }, []);
   return null;
 };
 

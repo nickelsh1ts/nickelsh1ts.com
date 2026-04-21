@@ -18,10 +18,10 @@ export default function RootLayout({
       <head>
         <PWAHeader applicationTitle={applicationTitle} />
       </head>
-      <ServiceWorkerSetup />
       <body
         className={`flex flex-col min-h-dvh`}
       >
+        <ServiceWorkerSetup />
         <NextTopLoader color={'#f58a07'} />
         <PullToRefresh />
         <Layout>{children}</Layout>
