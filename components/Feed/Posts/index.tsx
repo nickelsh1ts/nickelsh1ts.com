@@ -59,12 +59,12 @@ export default async function Posts() {
           </Link>
           <div className="card__content grid gap-y-1 leading-tight">
             <div className="flex gap-x-2 text-md items-center text-neutral-400">
-              <a
+              <Link
                 href="/about"
                 className="hover:underline font-bold text-text-1"
               >
                 nickelsh1ts ✈️
-              </a>
+              </Link>
               <span>•</span>
               <time className="text-xs font-thin text-neutral-400">
                 <Date dateString={date} />
@@ -87,7 +87,7 @@ export default async function Posts() {
               }}
             ></div>
             <div className="card__actions flex justify-end items-center">
-              <a
+              <Link
                 title="Permalink"
                 className="w-10 h-10 grid place-items-center hover:bg-[#495057] rounded-md text-white hover:text-fox"
                 href={`/posts/${id}`}
@@ -105,7 +105,7 @@ export default async function Posts() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
               <button
                 title="Like post"
                 disabled={true}
