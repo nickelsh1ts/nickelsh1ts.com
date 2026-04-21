@@ -221,7 +221,7 @@ const ExtraFeed = () => {
             >
               <button
                 title="View"
-                className="w-10 h-10 grid place-items-center hover:bg-[#495057] rounded-md text-white hover:text-fox"
+                className="w-10 h-10 grid place-items-center hover:bg-[#495057] rounded-md text-white hover:text-fox hover:cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenModal({

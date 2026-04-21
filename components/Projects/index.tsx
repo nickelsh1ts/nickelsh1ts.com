@@ -57,9 +57,8 @@ export default function Projects() {
             I currently operate a small{' '}
             <a
               href="https://linuxhandbook.com/homelab/"
-              style={{ cursor: 'help' }}
               title="What is a Homelab and Why Should You Have One?"
-              className="italic"
+              className="italic hover:cursor-help hover:underline"
               target="blank"
             >
               homelab

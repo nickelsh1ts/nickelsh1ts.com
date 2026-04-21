@@ -69,7 +69,7 @@ export default function Modal({
                 <div className="absolute pt-1 pr-1 top-0 right-0">
                   <button
                     type="button"
-                    className="btn hover:bg-zinc-700 p-1 rounded-md"
+                    className="btn hover:bg-zinc-700 p-1 rounded-md hover:cursor-pointer"
                     onClick={onClose}
                   >
                     <span className="absolute w-1 h-1 p-0 -m-1 whitespace-nowrap border-0 sr-only">
@@ -128,7 +128,7 @@ export default function Modal({
                   <a className="" href={downloadHref} download={downloadFile}>
                     <button
                       type="button"
-                      className="w-full justify-center hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-fox px-3 py-1 sm:mt-0 sm:w-auto"
+                      className="w-full justify-center hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-fox px-3 py-1 sm:mt-0 sm:w-auto hover:cursor-pointer"
                     >
                       Download
                     </button>
