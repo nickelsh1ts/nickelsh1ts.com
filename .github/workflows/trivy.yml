@@ -5,7 +5,7 @@ name: Trivy Container Vulnerability Scan
 on:
   workflow_run:
     workflows:
-      - Streamarr Release
+      - nickelsh1ts.com Release
     types:
       - completed
   schedule:
