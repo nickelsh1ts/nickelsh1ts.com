@@ -1,0 +1,26 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+
+  packageRules: [
+    // Default for all dependencies
+    {
+      matchPackageNames: ['*'],
+      semanticCommitType: 'chore',
+      semanticCommitScope: 'deps',
+    },
+
+    // Node.js runtime
+    {
+      matchPackageNames: ['node'],
+      semanticCommitType: 'build',
+      semanticCommitScope: 'node',
+    },
+
+    // GitHub Actions
+    {
+      matchManagers: ['github-actions'],
+      semanticCommitType: 'ci',
+      semanticCommitScope: 'actions',
+    },
+  ],
+}
