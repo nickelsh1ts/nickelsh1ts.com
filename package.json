@@ -17,7 +17,7 @@
   },
   "author": "Nicholas Wege",
   "license": "MIT",
-  "packageManager": "pnpm@11.6.0",
+  "packageManager": "pnpm@11.8.0",
   "dependencies": {
     "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
