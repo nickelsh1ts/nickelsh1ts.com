@@ -4,3 +4,5 @@ allowBuilds:
 minimumReleaseAge: 10080 # minutes; 10080 = 7 days
 minimumReleaseAgeExclude:
   - '@types/*'
+  # Renovate security update: next@16.2.11
+  - next@16.2.11
