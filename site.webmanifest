@@ -1,0 +1,82 @@
+{
+  "name": "nickelsh1ts",
+  "short_name": "nickelsh1ts",
+  "description": "Personal developer site and portfolio",
+  "icons": [
+    {
+      "src": "./icon/nickelsh1ts-logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon/nickelsh1ts-logo_maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icon/nickelsh1ts-logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon/nickelsh1ts-logo_maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F58A07",
+  "theme_color": "#16191d",
+  "shortcuts": [
+    {
+      "name": "Feed",
+      "url": "./",
+      "icons": [
+        {
+          "src": "/icon/home-icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "url": "./about",
+      "icons": [
+        {
+          "src": "/icon/about-icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "url": "./projects",
+      "icons": [
+        {
+          "src": "/icon/now-icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Extras",
+      "url": "./extras",
+      "description": "Extras",
+      "icons": [
+        {
+          "src": "/icon/projects-icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
