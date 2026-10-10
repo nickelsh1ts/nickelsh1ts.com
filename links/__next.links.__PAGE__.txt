@@ -1,0 +1,66 @@
+1:"$Sreact.fragment"
+2:I[2823,["142","static/chunks/142-393ecafeeb1f0b7d.js","732","static/chunks/app/links/page-b959be1e364391ef.js"],"default"]
+3:I[864,["142","static/chunks/142-393ecafeeb1f0b7d.js","732","static/chunks/app/links/page-b959be1e364391ef.js"],"default"]
+4:I[5142,["142","static/chunks/142-393ecafeeb1f0b7d.js","732","static/chunks/app/links/page-b959be1e364391ef.js"],"Image"]
+5:I[4373,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+a:I[4373,[],"ViewportBoundary"]
+b:I[4373,[],"MetadataBoundary"]
+c:I[272,[],"IconMark"]
+e:I[8744,[],""]
+f:I[6270,[],""]
+:HL["/_next/static/css/db0d6e73860b2e0d.css","style"]
+9:X
+11:X
+11:C
+0:{"buildId":"KWFEuLfFmsgeJPjAjBTYO","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"main","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","div",null,{"className":"w-content max-w-full mx-auto grid gap-3 px-4 md:px-0 mt-2","children":[["$","a","NickflixTV - self-hosted private streaming service",{"href":"https://www.nickflixtv.com","target":"_self","className":"flex min-h-12 items-center transition-colors duration-300 hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded text-white bg-fox","children":[["$","div",null,{"className":"flex items-center justify-center w-14 h-full me-1","children":["$","$L4",null,{"src":"/nickflixtv-logo_maskable-512x512.png","alt":"NickflixTV logo","className":"rounded","width":40,"height":40}]}],["$","p",null,{"className":"font-bold text-center items-center tracking-wider w-full","children":"NickflixTV - self-hosted private streaming service"}]]}],["$","a","Streamarr - Open-source media server manager",{"href":"https://streamarr.dev","target":"_blank","className":"flex min-h-12 items-center transition-colors duration-300 hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded text-white bg-fox","children":[["$","div",null,{"className":"flex items-center justify-center w-14 h-full me-1","children":["$","$L4",null,{"src":"/streamarr-logo_maskable-192x192.png","alt":"Streamarr logo","className":"rounded","width":40,"height":40}]}],["$","p",null,{"className":"font-bold text-center items-center tracking-wider w-full","children":"Streamarr - Open-source media server manager"}]]}],["$","a","CloudSh1ts - self-hosted cloud infrastructure",{"href":"https://cloud.nickelsh1ts.com","target":"_blank","className":"flex min-h-12 items-center transition-colors duration-300 hover:no-underline border-transparent focus:border-white outline-transparent focus-visible:border-white hover:border-white border-4 rounded text-white bg-fox","children":[["$","div",null,{"className":"flex items-center justify-center w-14 h-full me-1","children":["$","$L4",null,{"src":"/next-cloud.svg","alt":"Nextcloud logo","className":"rounded","width":40,"height":40}]}],["$","p",null,{"className":"font-bold text-center items-center tracking-wider w-full","children":"CloudSh1ts - self-hosted cloud infrastructure"}]]}]]}]]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":"$@8","staleTime":"$9","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$La",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Links - nickelsh1ts.com"}],["$","link","1",{"rel":"icon","href":"/favicon.ico?9295c086aa02e51f","type":"image/x-icon","sizes":"16x16"}],["$","$Lc","2",{}]]}]}]}],null]}],"isPartial":"$@d","staleTime":"$9","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}]}]]}],"isPartial":"$@10","staleTime":"$9","varyParams":"$11"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db0d6e73860b2e0d.css","precedence":"next"}]],["$","html",null,{"lang":"en-CA","data-theme":"fox","children":[["$","head",null,{"children":[["$","link",null,{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"}],["$","link",null,{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"}],["$","link",null,{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"}],["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2048-2732.jpg","media":"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}],["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2732-2048.jpg","media":"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}],"$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b","$L2c","$L2d","$L2e","$L2f","$L30","$L31","$L32"]}],"$L33"]}]]}],"isPartial":"$@34","staleTime":"$9","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@35","rootVaryParams":null,"needsRuntimeRequest":"$@36"}
+37:I[5956,["633","static/chunks/633-12b4f5fdc3f1a0f2.js","142","static/chunks/142-393ecafeeb1f0b7d.js","122","static/chunks/122-2c06a774d14b5ad0.js","177","static/chunks/app/layout-081d02c05b213917.js"],"default"]
+38:I[5220,["633","static/chunks/633-12b4f5fdc3f1a0f2.js","142","static/chunks/142-393ecafeeb1f0b7d.js","122","static/chunks/122-2c06a774d14b5ad0.js","177","static/chunks/app/layout-081d02c05b213917.js"],""]
+39:I[6502,["633","static/chunks/633-12b4f5fdc3f1a0f2.js","142","static/chunks/142-393ecafeeb1f0b7d.js","122","static/chunks/122-2c06a774d14b5ad0.js","177","static/chunks/app/layout-081d02c05b213917.js"],"default"]
+3a:I[4633,["633","static/chunks/633-12b4f5fdc3f1a0f2.js","142","static/chunks/142-393ecafeeb1f0b7d.js","122","static/chunks/122-2c06a774d14b5ad0.js","177","static/chunks/app/layout-081d02c05b213917.js"],"default"]
+3b:I[8466,["39","static/chunks/app/error-22098a6a23f40920.js"],"default"]
+3c:I[806,["633","static/chunks/633-12b4f5fdc3f1a0f2.js","345","static/chunks/app/not-found-e0d2957b6da3b0e0.js"],"default"]
+3d:I[8633,["633","static/chunks/633-12b4f5fdc3f1a0f2.js","481","static/chunks/481-272827f4cfc60fd8.js","974","static/chunks/app/page-54b987c3e503e9a4.js"],""]
+7:null
+12:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1668-2388.jpg","media":"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+13:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2388-1668.jpg","media":"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+14:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1536-2048.jpg","media":"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+15:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2048-1536.jpg","media":"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+16:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1668-2224.jpg","media":"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+17:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2224-1668.jpg","media":"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+18:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1620-2160.jpg","media":"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+19:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2160-1620.jpg","media":"(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+1a:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1284-2778.jpg","media":"(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"}]
+1b:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2778-1284.jpg","media":"(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"}]
+1c:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1170-2532.jpg","media":"(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"}]
+1d:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2532-1170.jpg","media":"(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"}]
+1e:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1125-2436.jpg","media":"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"}]
+1f:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2436-1125.jpg","media":"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"}]
+20:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1242-2688.jpg","media":"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"}]
+21:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2688-1242.jpg","media":"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"}]
+22:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-828-1792.jpg","media":"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+23:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1792-828.jpg","media":"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+24:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1242-2208.jpg","media":"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"}]
+25:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-2208-1242.jpg","media":"(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"}]
+26:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-750-1334.jpg","media":"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+27:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1334-750.jpg","media":"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+28:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-640-1136.jpg","media":"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"}]
+29:["$","link",null,{"rel":"apple-touch-startup-image","href":"/apple-splash-1136-640.jpg","media":"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"}]
+2a:["$","meta",null,{"name":"apple-mobile-web-app-capable","content":"yes"}]
+2b:["$","meta",null,{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}]
+2c:["$","link",null,{"rel":"manifest","href":"/site.webmanifest","crossOrigin":"use-credentials"}]
+2d:["$","meta",null,{"name":"apple-mobile-web-app-title","content":"nickelsh1ts"}]
+2e:["$","meta",null,{"name":"description","content":"it's all about me"}]
+2f:["$","meta",null,{"name":"format-detection","content":"telephone=no"}]
+30:["$","meta",null,{"name":"mobile-web-app-capable","content":"yes"}]
+31:["$","meta",null,{"name":"theme-color","content":"#1f2937"}]
+32:["$","meta",null,{"name":"application-name","content":"nickelsh1ts"}]
+33:["$","body",null,{"className":"flex flex-col min-h-dvh","children":[["$","$L37",null,{}],["$","$L38",null,{"color":"#f58a07"}],["$","$L39",null,{}],["$","$L3a",null,{"children":["$","$Le",null,{"parallelRouterKey":"children","error":"$3b","errorStyles":[],"errorScripts":null,"template":["$","$Lf",null,{}],"notFound":[["$","main",null,{"className":"mt-auto text-center","children":[["$","h1",null,{"className":"text-9xl","children":"404"}],["$","h2",null,{"className":"text-3xl my-3","children":["$","$L3c",null,{}]}],["$","p",null,{"className":"text-4xl mb-3","children":"Not Found"}],["$","$L3d",null,{"className":"text-md","href":"/","children":"Return Home"}]]}],[]]}]}]]}]
+9:300
+36:true
+9:C
+35:0
+d:"$undefined"
+10:"$undefined"
+8:"$undefined"
+34:"$undefined"
