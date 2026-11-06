@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Nicholas Wege
+N:Wege;Nicholas;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:nicholas.wege@nickelsh1ts.com
+TEL;TYPE=CELL:(647) 390-9205
+ADR;TYPE=HOME:;;Tubman Ave;Toronto;ON;M5A 0M8;CA;Tubman Ave\nToronto\, ON M
+ 5A 0M8\nCA
+item1.ORG:nickelsh1ts.com
+item1.X-ABLabel:
+item2.TITLE:Front End Developer
+item2.X-ABLabel:
+BDAY:--0907
+item3.URL:https\://www.nickelsh1ts.com
+item3.X-ABLabel:nickelsh1ts.com
+item4.URL:https\://nickflixtv.com
+item4.X-ABLabel:NickflixTV
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGfD1URJm7EoNBTt1vWJI
+ 8qxtGXrTDr1LYER9R4IJ8LN3N9CML4
+CATEGORIES:myContacts
+END:VCARD
